@@ -1,0 +1,620 @@
+================================================================================
+AUDITORÍA DE COBERTURA OSINT — LÁZARO AUTOMOTORES Y CAMIONES
+Gualeguaychú, Entre Ríos, Argentina
+================================================================================
+Archivo: lazaro_auditoria_total_cobertura_osint.txt (UTF-8)
+Fecha de auditoría / corte de consulta: 2026-10-14
+Herramientas disponibles en esta auditoría: búsqueda web (modo estándar y
+extendido), apertura de URLs que aparecieron en resultados o en el encargo, y
+lectura local de los archivos del ZIP del sitio. Sin Wayback, sin Google Maps,
+sin acceso a Facebook/Instagram (robots), sin registros que exigen trámite.
+
+Convención de estados de evidencia (sec. 9 del encargo): Confirmado /
+Corroborado / Probable / Ambiguo / Refutado / No verificable.
+Convención de fuentes (sec. 5): Verificada directamente / Consultada
+parcialmente / Mencionada pero no verificada / Inaccesible con las herramientas
+disponibles / Duplicada de otra fuente / Descartada por atribución incorrecta.
+IDs: SRC fuente, QRY consulta de esta auditoría, AFI afirmación, LIC línea
+Licuo, GAP vacío, NEW hallazgo nuevo de esta auditoría, PC punto ciego.
+
+ADVERTENCIA CENTRAL: este documento NO declara "100 % de la información
+pública". Declara un cierre operativo PARCIAL, con las limitaciones de las
+herramientas explicitadas. "Sin resultados" no significa "no existe".
+
+--------------------------------------------------------------------------------
+1. RESUMEN EJECUTIVO
+--------------------------------------------------------------------------------
+1. Existe un comercio de Gualeguaychú con nombre propio "Lazaro Automotores y
+   Camiones" (Facebook/Instagram) y nombre de directorio "Lazaro Automotores"
+   (variante histórica "O Km - Usados"), en Primera Junta 218, fijo 03446
+   43-2700 y WhatsApp 011 15 6409-7886. Estado: CORROBORADO como entidad y
+   como contacto (ver AFI-01 a AFI-03), con la salvedad de que ni Facebook ni
+   Instagram pudieron abrirse directamente.
+2. Hallazgo nuevo más valioso (NEW-01): arempresas muestra "Registrada con
+   nosotras en 21 Jun, 2012" para "LAZARO AUTOMOTORES O KM - USADOS", con
+   Primera Junta 218 y 43-2700. Es la primera fecha explícita de un tercero
+   (antes el expediente solo tenía "~2012 por edad de indexación"). No prueba
+   fundación; sí prueba que esa combinación nombre-dirección-teléfono tiene
+   al menos 14 años en un directorio.
+3. La línea Licuo LIC-002 ("O Km - Usados", (0)3446 493 065, "ruta nacional
+   14") sigue INDETERMINADA. Esta auditoría confirmó que figura también en
+   el listado de Gualeguaychú (no solo en el provincial) y que el listado de
+   la ciudad de Gualeguay la repite: la geocodificación de Licuo es
+   inconsistente. Ninguna otra fuente usa 493065. Se mantiene fuera de los
+   datos del comercio.
+4. Horarios: siguen CONTRADICTORIOS. Ahora hay dos versiones verificadas
+   directamente por mí (Zona Auto y laguiaonline.com.ar) y una tercera
+   (Autoyas) heredada del expediente. Ninguna fuente es del comercio.
+5. Identidad legal (razón social, CUIT): NO localizada. Un homónimo nuevo fue
+   descartado (Lazaro Enrique Jesus, Córdoba). No se buscaron datos
+   tributarios de personas físicas por privacidad.
+6. Inventario: sigue sin haber ningún anuncio individual con URL. Los
+   extractos de Autoyas (abril–junio 2026) son históricos y parciales.
+7. Hallazgo sobre el propio sitio (NEW-08): el index.html del ZIP publica el
+   correo hotmail, los nombres de los titulares, "46 años" y la financiación,
+   cosas que el informe 4.3/4.4 y el expediente marcaban como "no publicar sin
+   confirmación del comercio". Hay que confirmarlas con el negocio o retirarlas.
+8. Cobertura global: PARCIAL. Quedan abiertas con acciones viables para una
+   persona con navegador: Facebook/Instagram, Google Maps, Wayback/CDX,
+   Boletín Oficial de Entre Ríos y registro de personas jurídicas, buscadores
+   internos de Mercado Libre y portales, y confirmación directa del comercio.
+
+--------------------------------------------------------------------------------
+2. INVENTARIO DE DOCUMENTOS ANTERIORES REVISADOS
+--------------------------------------------------------------------------------
+LEÍDOS ÍNTEGRAMENTE EN ESTA AUDITORÍA
+ D1. INFORME_OSINT_4_3_4_4_EJECUCION_2026-10-14.txt (dentro del ZIP del sitio).
+     Protocolos 4.3 (hemerotecas/clasificados) y 4.4 (identidad/registros).
+     3 búsquedas declaradas (a, b, c). Hallazgos H1–H8. Dos aperturas.
+ D2. expediente_maestro_final_lazaro_automotores.txt (dentro del ZIP).
+     Fecha 2026-10-14. Declara 8 búsquedas y 12 intentos de apertura.
+     Hallazgos: LIC-001/002, ADV-001..005, tercera versión de horarios, etc.
+     Nota: el archivo comienza en la sección 3 (faltan las secciones 1 y 2).
+ D3. Prompt madre de auditoría (este encargo).
+NO DISPONIBLES (no se inventa su contenido)
+ - TXT_MADRE_OSINT_4_5_Lazaro_Inventario_Anuncios.txt (citado por D2).
+ - Los seis dossiers de enfoques especializados y las "capas anteriores"
+   mencionadas en D2 (sec. 5).
+ - Las capturas de Google Maps del usuario (3,9 con 7 opiniones; reseñas
+   "hace 7 años"): heredadas de D1 como dato de tercera mano.
+
+Regla crítica aplicada: lo que D1/D2 dicen haber ejecutado queda como
+"documentado por el informe anterior, no verificado independientemente",
+salvo donde esta auditoría volvió a abrir la fuente (marcado "REVERIFICADO").
+
+Fuentes de D1/D2 que esta auditoría REVERIFICÓ abriéndolas:
+ - Zona Auto (SRC-04), Guía Industrial (SRC-05), Licuo Gualeguaychú (SRC-06),
+   y Autoyas (SRC-03, solo cabecera). Además abrió laguiaonline.com.ar
+   (fuente nueva respecto de D2; D1 la citaba como "laguia.online").
+
+--------------------------------------------------------------------------------
+3. MATRIZ DE TRAZABILIDAD (hallazgo -> documento -> fuente -> estado actual)
+--------------------------------------------------------------------------------
+ H1/AFI-03 WhatsApp 011 15 6409-7886 | D1 H1, D2 sec.14 | Facebook (extracto),
+   Instagram (extracto, bio "1164097886"), Autoyas posts 2026 | Visto de nuevo
+   en extractos (QRY-002, QRY-009). Estado: CONFIRMADO como dato publicado por
+   el propio negocio; apertura directa: no lograda.
+ H2 Código postal 2820 | D1 | Autoyas (extracto reverificado: "Gualeguaychú
+   2820"), Moovit ("2820 Gualeguaychú") | CORROBORADO. Cylex/Telexplorer: del
+   informe, no reverificados.
+ H3/AFI-04 "46 años" | D1 H3, D2 | Facebook (extracto), Autoyas (#46Años en
+   posts de 2026, visto), Instagram dice 45 | Ver sec. 8.
+ H4 Correo hotmail | D1 H4 | Facebook (extracto, reverificado en QRY-002).
+ H5 3,9/7 Google; FB "3 reviews" | D1 H5 | FB extracto reverificado ("Not yet
+   rated (3 Reviews)"); Google Maps: NO verificable por mí.
+ H6 Horarios | D1 H6, D2 sec.14 | Ver sec. 8 (contradicción 1).
+ H7 Posts 2024 con precios | D1 H7 | Autoyas | NO reverificado (solo veo 2026).
+ H8 "Concesionario oficial" | D1 H8 | Zona Auto | REVERIFICADO: texto de
+   plantilla; refutado como dato.
+ ADV-001..005 | D2 sec.10 | Autoyas (extracto) | REVERIFICADOS parcialmente:
+   vi fechas 06/05, 13/05, 16/06, 18/06 y 22/06/2026 y los textos de ADV-002
+   a ADV-005. ADV-001 (29/04, VW Vento) no apareció en esta ronda: queda como
+   "documentado por D2, no reverificado".
+ LIC-001/LIC-002 | D2 sec.14-bis | Licuo | REVERIFICADOS (ver sec. 8, C4).
+
+--------------------------------------------------------------------------------
+4. MATRIZ COMPLETA DE COBERTURA POR ÁREAS (A–L)
+--------------------------------------------------------------------------------
+ A. Identidad e identificación comercial
+    Nombre exacto: "Lazaro Automotores y Camiones" (sin tilde en los perfiles).
+    Variantes: "Lazaro Automotores", "Lazaro Automotores O Km - Usados" (Licuo,
+    arempresas, SuperGuía, Moovit), "Lazaro Automores 0 Km - Usados"
+    (TodosNegocios, error tipográfico, según D2), "LAZARO AUTOMOTORES GUALEGUAYCHU".
+    Homónimos descartados: ver sec. 8 (C6). Razón social: no localizada.
+    Antigüedad: ver G. ESTADO: Cerrada dentro del alcance público accesible,
+    con limitaciones (el nombre comercial sí; la identidad legal no).
+ B. Presencia digital propia
+    Facebook e Instagram (extractos). Sin sitio propio hallado: Zona Auto
+    remite el campo "Sitio Web" a Facebook (REVERIFICADO). El sitio del ZIP es
+    una demo y se declara "no es el sitio oficial". Dominios/subdominios,
+    versiones archivadas: sin Wayback. ESTADO: Parcialmente cubierta; requiere
+    acción adicional (Wayback/CDX, whois, buscar dominios antiguos).
+ C. Directorios comerciales
+    12 directorios identificados (sec. 6). Cuatro abiertos íntegros por mí (Zona Auto, Guía Industrial, Licuo Gualeguaychú, laguiaonline).
+    Cadena de copia analizada (sec. 7). ESTADO: Cerrada dentro del alcance
+    público accesible, con limitaciones (Licuo 13021 y 245366 inaccesibles).
+ D. Inventario e historial automotor
+    0 anuncios individuales verificados. Extractos de Autoyas, históricos.
+    Mercado Libre: las búsquedas devolvieron páginas genéricas de listado, sin
+    vendedor identificable. ESTADO: Parcialmente cubierta; requiere acción
+    adicional (URLs de posts, buscadores internos de portales).
+ E. Redes sociales
+    Perfiles atribuidos, extractos de bio. Publicaciones individuales: solo vía
+    espejo (Autoyas) y extractos. Facebook ~8,5 mil seguidores (D1);
+    Instagram 4.488 seguidores / 2.528 seguidos / 399 publicaciones (visto en
+    QRY-002). ESTADO: Parcialmente cubierta; requiere acción adicional.
+    No afirmo haber revisado publicaciones individuales de Facebook/Instagram.
+ F. Reputación y referencias de terceros
+    Facebook "Not yet rated (3 Reviews)" (extracto); laguiaonline "Todas las
+    Reseñas (0)" (verificado); Zona Auto: formulario sin reseñas visibles;
+    Guía Urbana y TodosNegocios: sin opiniones (según D2). Google 3,9/7: no
+    verificable por mí. La muestra es mínima y no permite inferir reputación.
+    ESTADO: Parcialmente cubierta; requiere acción adicional (Google Maps).
+ G. Historia comercial
+    Primer rastro fechado de tercero: 2012-06-21 (arempresas, NEW-01). Resto:
+    2023-11 (imagen Zona Auto, según URL /uploads/2023/11/), 2024-02-19
+    (modificación de la ficha de Zona Auto, metadato verificado), 2024-06
+    (posts, según D1), 2026-04/06 (posts, extracto). Sin cambios de domicilio,
+    teléfono o denominación documentados. Vacío entre 2012 y 2023 salvo
+    directorios. ESTADO: Parcialmente cubierta; requiere acción adicional.
+ H. Registros y documentación pública
+    Una búsqueda nominal de razón social/CUIT (QRY-A06 y QRY-A08 de esta
+    auditoría; QRY-008 de D2) sin resultado atribuible. Boletín Oficial de Entre Ríos y
+    registro de personas jurídicas: NO consultados (no hay vía de consulta
+    nominal con estas herramientas). ESTADO: No investigada en las fuentes
+    primarias; parcialmente cubierta por búsqueda nominal indirecta.
+ I. Ubicaciones y contactos
+    Primera Junta 218: CORROBORADO. 03446 43-2700: CORROBORADO. WhatsApp:
+    CONFIRMADO (canales propios, extractos). RN 14 / 03446 493065: INDETERMINADO.
+    Sucursales o traslados: no documentados. Vigencia actual: no verificable
+    sin confirmar con el comercio. ESTADO: Cerrada dentro del alcance público
+    accesible, con limitaciones (excepto LIC-002: abierta).
+ J. Prensa y archivos históricos
+    Búsquedas de prensa (QRY-004, QRY-009) sin ninguna mención del comercio;
+    solo ruido (Grupo Pacheco, González Automóviles de Misiones, Lázaro Báez).
+    R2820, El Día, Pregón y hemerotecas: sin consulta directa. Wayback: sin
+    acceso. ESTADO: Parcialmente cubierta; requiere acción adicional.
+ K. Ecosistema comercial
+    Sin menciones de proveedores, cámaras o eventos que nombren al comercio.
+    No se infiere nada por vecindad o apellido (p. ej. González Automóviles
+    de Misiones y Kesselman Automotores NO tienen relación demostrada).
+    ESTADO: Cerrada dentro del alcance público accesible, con limitaciones.
+ L. Fuentes especializadas y alternativas
+    Viables con justificación: ver sec. 7 (PC) y sec. 16. ESTADO: Parcialmente
+    cubierta; requiere acción adicional.
+
+--------------------------------------------------------------------------------
+5. REGISTRO DE FUENTES VERIFICADAS (estado, URL, aporte)
+--------------------------------------------------------------------------------
+ SRC-03 https://www.autoyas.com/AR/Gualeguaych%C3%BA/102634064981550/Lazaro-Automotores-y-Camiones
+   CONSULTADA PARCIALMENTE. Apertura directa: solo cabecera (REVERIFICADO).
+   Extractos de buscador: posts del 06/05, 13/05, 16/06, 18/06 y 22/06/2026;
+   dirección "Avenida Primera Junta 218 Gualeguaychú 2820"; texto "AGENCIA:
+   3446 - 432700 / WHATS APP: 011 15-6409-7886"; "#46Años". Réplica de
+   Facebook (og:image apunta a graph.facebook.com/102634064981550; no verifico
+   que ese ID sea el de la página).
+ SRC-04 https://zonaauto.com.ar/concesionarios/lazaro-automotores/
+   VERIFICADA DIRECTAMENTE. Metadato de modificación 2024-02-19. Primera Junta
+   218, 3446 432700. Horario: L-V 8:30-12:30 y 17:00-20:30; Sáb 8:00-12:30;
+   Dom cerrado. "Sitio Web" -> facebook.com/lazaroautomotoresycamiones.
+   Texto de plantilla con "Concesionario oficial Multimarca" (no usable).
+ SRC-05 https://guiaindustrial.com.ar/lazaro-automotores-gualeguaychu-entre-rios
+   VERIFICADA DIRECTAMENTE. Sin horarios. Rubro/descripción "0 KM - USADOS -
+   MULTIMARCAS - VENTA DE CAMIONES USADOS". Ficha sin reclamar por el titular
+   ("Verificar y actualizar ficha"). El botón WhatsApp wa.me/543446432700 es
+   un enlace generado a partir del fijo: no prueba que el fijo tenga WhatsApp.
+ SRC-06 https://gualeguaychu.licuo.com.ar/concesionarios_automotor-en_gualeguaychu.htm
+   VERIFICADA DIRECTAMENTE. "Resultados 1 a 18". Dos entradas de Lázaro
+   (LIC-001 y LIC-002). La entrada de Mueblería Vercelli, rotulada como
+   concesionario, confirma la baja calidad de la carga masiva.
+ SRC-18 (NUEVA) https://laguiaonline.com.ar/businesses/lazaro-automotores
+   VERIFICADA DIRECTAMENTE. Primera Junta 218, (03446) 43-2700. Horario:
+   L-V 08:00-12:30 y 16:30-20:30; Sáb 08:00-12:30; Dom cerrado. "Servicios:
+   Venta de camiones, agencias de automóviles, automotores nuevos, 0 km".
+   Reseñas: 0. Sello de página "versión de publicación 20261012232713".
+   Mueblería Vercelli figura también como "Agencias de Automotores".
+ SRC-19 (NUEVA, extracto) https://www.suamarillas.com/empresa/lazaro-automotores-entre-rios-305147
+   CONSULTADA PARCIALMENTE (solo extracto). Primera Junta 218, 43-2700,
+   "Horarios: Sin informar". Aparece junto a la variante "Lazaro Automores".
+ SRC-13 https://www.arempresas.com/company/89602/LAZARO_AUTOMOTORES_O_KM_USADOS
+   CONSULTADA PARCIALMENTE (extracto, REVERIFICADO). "Registrada con nosotras
+   en 21 Jun, 2012"; etiqueta "tag_unverified"; Primera Junta 218; (03446)
+   43-2700; actividad "Servicio de Vehículos". Cuenta de la edad: 5.228 días
+   antes de 2026-10-14 = 2012-06-21 (calculado).
+ SRC-14 https://entre-rios.superguiaargentina.com.ar/empresas/Lazaro-Automotores-gualeguaychu-gualeguaychu-entre-rios-i144190.htm
+   CONSULTADA PARCIALMENTE (extracto). "O Km - Usados Multimarcas", 43-2700,
+   rubro "Alquiler de Autos - Servicios / Consultoría" (error de rubro).
+ SRC-15 Moovit (extracto): dirección y "2820"; no es evidencia comercial.
+ SRC-20 (NUEVA, extracto) https://gualeguay.licuo.com.ar/concesionarios_automotor-en_gualeguay.htm
+   CONSULTADA PARCIALMENTE. Lista a "Lazaro Automotores O Km - Usados",
+   (0)3446 493 065, "ruta nacional 14", Gualeguaychu, dentro del listado de
+   la ciudad de Gualeguay (Curuchet, Del Sol). Ver LIC-002.
+ SRC-01 / SRC-02 Facebook e Instagram: CONSULTADAS PARCIALMENTE (solo
+   extractos de buscador, REVERIFICADOS). Facebook: "Avenida Primera Junta 218,
+   Gualeguaychú", +54 11 6409-7886, lglazaroautomotores@hotmail.com, enlace a
+   Instagram, "Open now", "Not yet rated (3 Reviews)", teaser "TOYOTA HILUX
+   PRECIO + INFO". Instagram: bio con "4 5 AÑOS", mismos nombres, 1164097886.
+   Apertura directa: inaccesible con las herramientas disponibles (robots).
+ SRC-08 https://palavecino.licuo.com.ar/empresas/lazaro_automotores_o_km_usados-13021
+   INACCESIBLE (robots: ROBOTS_DISALLOWED, reintentado).
+ SRC-09 https://gualeguaychu.licuo.com.ar/empresas/lazaro_automotores-245366
+   INACCESIBLE (HTTP 500, reintentado).
+ SRC-10 TodosNegocios, SRC-11 Guía Urbana, SRC-07 Licuo provincial:
+   documentados por D2; esta auditoría NO los reabrió (marcados "mencionada,
+   no reverificada").
+
+--------------------------------------------------------------------------------
+6. REGISTRO DE FUENTES DUPLICADAS (cadenas de copia)
+--------------------------------------------------------------------------------
+ CADENA 1 (datos de dirección/teléfono): Zona Auto, Guía Industrial, Guía
+ Urbana, Licuo (LIC-001), laguiaonline, suamarillas, TodosNegocios, SuperGuía,
+ arempresas, Moovit. Comparten nombre+dirección+43-2700. Cuentan como UNA
+ línea de evidencia para esos tres datos. Indicios de base común:
+   - La cadena de texto "0 KM - USADOS - MULTIMARCAS - VENTA DE CAMIONES
+     USADOS" es idéntica en Guía Industrial y laguiaonline (verificado).
+   - laguiaonline y Licuo clasifican a una mueblería (Mueblería Vercelli,
+     Primera Junta 349) como agencia de automotores (verificado en ambos):
+     probable carga de una misma base original. Es inferencia, no prueba.
+ CADENA 2 (posts): Facebook -> Autoyas. Autoyas es un espejo. Los extractos
+   de Autoyas cuentan como réplica de la página de Facebook, no como fuente
+   adicional.
+ CADENA 3 (variante "O Km - Usados"): arempresas, SuperGuía, Moovit,
+   TodosNegocios y Licuo (LIC-002) comparten el nombre; solo LIC-002 trae otro
+   teléfono y otra ubicación.
+ La única línea independiente de los directorios es la del propio comercio
+ (Facebook, Instagram, posts), y aun esa solo se vio por extractos.
+ Un dato que coincide a lo largo de 14 años en directorios (2012 -> 2026) y
+ con los posts de 2026 es consistente, pero los directorios antiguos pueden
+ provenir de la misma carga original.
+
+--------------------------------------------------------------------------------
+7. HALLAZGOS NUEVOS OBTENIDOS DURANTE LA AUDITORÍA
+--------------------------------------------------------------------------------
+ NEW-01 Fecha explícita de registro en arempresas: 2012-06-21 (SRC-13).
+        Antes: "~2012 por edad de indexación". Mejora de precisión; sigue
+        siendo registro de directorio con etiqueta "unverified". No es fecha
+        de fundación ni de publicación de datos del comercio.
+ NEW-02 En 2012 el directorio ya asociaba el nombre "O Km - Usados" con
+        Primera Junta 218 y 43-2700. Apoya que "O Km - Usados" es variante de
+        nombre del mismo local, no una segunda sede (conclusión: PROBABLE).
+ NEW-03 laguiaonline.com.ar (dominio correcto; D1 citaba "laguia.online") fue
+        abierta íntegra: horario verificado, 0 reseñas, servicios incluyendo
+        "Venta de camiones". Hace explícita la cadena de copia con Guía
+        Industrial.
+ NEW-04 suamarillas.com: directorio número 12 de la lista, con 43-2700 y sin horario.
+        No aporta datos nuevos (duplicado de Cadena 1).
+ NEW-05 LIC-002 aparece en TRES listados de Licuo: Gualeguaychú (verificado),
+        Gualeguay (extracto) y bajo URL del subdominio "palavecino". La
+        misma ficha figura en ciudades distintas: geocodificación incoherente.
+        Refuerza la sospecha de error de carga; no demuestra ni descarta que
+        sea el mismo comercio.
+ NEW-06 Homónimo nuevo descartado: "LAZARO AUTOMOTORES", titular Lazaro
+        Enrique Jesus, Av. Leandro N. Alem 1161, Córdoba, en el listado BNA
+        de concesionarias adheridas a CCAC (el nombre de archivo indica
+        15/06/2018): https://www.bna.com.ar/Downloads/Listado-de-Concesionarias-Adheridas-a-CCAC-15062018.pdf
+        Sin relación con Gualeguaychú. Importante: una búsqueda por nombre
+        genera falsos positivos con este homónimo.
+ NEW-07 Consistencia aritmética de "años de trayectoria": 44 años (junio
+        2024, según D1), 45 (Instagram), 46 (Facebook y #46Años en posts de
+        2026). Todos apuntan a ~1980 como año de inicio autodeclarado. Es
+        coherencia de una afirmación del propio negocio, NO prueba de
+        fundación. La cifra 45 de Instagram es probablemente un snapshot más
+        antiguo (hipótesis, no verificada).
+ NEW-08 Contraste sitio vs. evidencia (lectura local del ZIP, búsqueda de
+        texto en index.html y privacidad.html):
+        - Publica lglazaroautomotores@hotmail.com (mailto y JSON-LD) y los
+          nombres "Lázaro González y Román González" (pie de página).
+        - Publica "46 años de trayectoria" en meta description, JSON-LD y
+          texto, con atribución "según su página de Facebook".
+        - Publica la financiación con créditos prendarios en la meta
+          description.
+        - Usa el horario de Zona Auto (8:30-12:30 y 17:00-20:30; Sáb 8:00-
+          12:30), que contradice a laguiaonline (8:00 / 16:30-20:30).
+        - El JSON-LD incluye coordenadas (-33.0056114, -58.5214283) sin fuente
+          documentada en D1 ni D2: NO VERIFICABLE.
+        - privacidad.html menciona E3269 solo como nota explicativa (Google
+          Maps mostraría E3269; el sitio usa 2820). No hay error residual,
+          pero el dato de Maps no pude verificarlo.
+        - Aclara en su texto "No es el sitio oficial. Datos pendientes de
+          confirmación".
+        D1 (sec. 6) y D2 (sec. 22) dicen que correo, nombres, "46 años" y
+        financiación NO deben publicarse sin confirmación del comercio. Eso
+        es una contradicción entre los informes y el estado del sitio. No
+        modifiqué el sitio: publicar o retirar esos datos es decisión del
+        dueño. Por eso no hay archivos del sitio en el ZIP de salida.
+ NEW-09 Autoyas, extractos reverificados: la publicación del 22/06/2026
+        (diésel 2.8, 177 HP, 43.500.000) y la del 13/05/2026 (diésel 3.0, 163
+        HP, 29.900.000) repiten "Aceptamos Permutas de Interés" y
+        "Financiación Bancaria... Créditos Prendarios en Cuotas Fijas". La
+        publicación del 18/06 contiene EcoSport 2012 XLS 1.6, 199.000 km,
+        11.000.000, y Kangoo 2014. Sin moneda visible: no se infiere.
+
+ Qué NO es nuevo (para evitar inflar): WhatsApp, 43-2700, Primera Junta 218,
+ correo, nombres, "46 años", horario de Zona Auto, "concesionario oficial" y
+ los homónimos de D1/D2 ya constaban en los informes anteriores.
+
+--------------------------------------------------------------------------------
+8. CONTRADICCIONES, REVISIÓN ADVERSARIAL Y CORRECCIONES
+--------------------------------------------------------------------------------
+ C1 HORARIOS (abierta).
+    Zona Auto (verificada, mod. 2024-02-19): L-V 8:30-12:30 y 17:00-20:30;
+    Sáb 8:00-12:30.
+    laguiaonline (verificada, sello 2026-10-12): L-V 8:00-12:30 y 16:30-20:30;
+    Sáb 8:00-12:30.
+    Autoyas (heredada de D2, extracto 2026): L-V 8:30-12:30 y 16:30-20:00;
+    Sáb 9:00-13:00. NO reverificada por mí.
+    Guía Industrial, Licuo, suamarillas: sin horario.
+    Ninguna es del comercio. Estado: AMBIGUO. Se resuelve solo
+    confirmando con el negocio.
+ C2 "46 vs 45 años" (abierta, hipótesis de snapshot viejo).
+ C3 AFI-02 (43-2700): corregida la presentación. El expediente la llamaba
+    "Confirmado por canal propio". Con revisión adversarial: el texto "AGENCIA:
+    3446 - 432700" lo vi en un espejo (Autoyas), no en Facebook (cuyo extracto
+    muestra la dirección y el celular, no el fijo). Estado ajustado a
+    CORROBORADO (posts 2026 vía espejo + directorios desde 2012), no
+    "confirmado directamente".
+ C4 LIC-002 vs LIC-001 (abierta).
+    LIC-001: "Lazaro Automotores", (03446) 43-2700, primera junta 218. Nombre,
+    dirección y teléfono coinciden con el comercio. PROBABLE-ALTO.
+    LIC-002: "Lazaro Automotores O Km - Usados", (0)3446 493 065, "ruta
+    nacional 14". Revisión adversarial:
+     - A favor: nombre casi idéntico; "O Km - Usados" es la variante que otros
+       directorios asocian con el comercio (NEW-02); misma localidad
+       declarada.
+     - En contra: teléfono distinto a toda otra fuente; sin número ni
+       kilómetro; la misma ficha aparece en listados de otras ciudades de
+       Licuo (NEW-05); pertenece a una carga antigua (ID 13021 frente a
+       245330-245377); sin ninguna búsqueda con resultado para 493065
+       (QRY-A05 de esta auditoría y QRY-004 de D2; el buscador devuelve ruido ante cadenas numéricas, lo que
+       limita el valor de esta ausencia).
+     - Hipótesis (ninguna descartable): mismo comercio con teléfono alterno;
+       otro punto de venta sobre RN 14; dato anterior ya sin uso; ficha
+       duplicada o mal importada; homónimo.
+     Estado: AMBIGUO. No usar 493065 ni RN 14 como dato del comercio.
+ C5 Rubros erróneos: SuperGuía ("alquiler de autos") y TodosNegocios
+    ("reparación", según D2): REFUTADOS como descripción del negocio.
+ C6 Homónimos y falsos positivos descartados (con motivo):
+    - Lazaro Enrique Jesus, Córdoba (NEW-06). Otro titular, provincia y
+      dirección.
+    - LAGO AUTOMOTORES SRL, CABA, CUIT 30715299670: nombre parecido, otra
+      localidad (reverificado en QRY-001).
+    - Kesselman Automotores SACIF, Urquiza 1085, Gualeguaychú: concesionario
+      distinto de otra firma; solo coincide la ciudad y el rubro.
+    - González Automóviles (Misiones): coincide el apellido de los titulares
+      autodeclarados; sin vínculo. Apellido no es evidencia.
+    - Lázaro Báez, Lázaro Cárdenas, Transporte Lazaro SA, Markel Neumáticos
+      (Primera Junta 428): ruido.
+ C7 "Concesionario oficial" (Zona Auto): REFUTADO como dato del comercio;
+    texto de plantilla del directorio ("tu Concesionario oficial Multimarca").
+ C8 "Venta de camiones usados": el comercio lo dice en su nombre y bio
+    ("CAMIONES") y laguiaonline/Guía Industrial lo repiten. Estado: PROBABLE
+    como actividad declarada. NO hay ningún anuncio de camión verificado.
+ C9 E3269 vs 2820: dos fuentes de directorio y Autoyas dan 2820; el sitio
+    indica que Google Maps muestra E3269 (según capturas del usuario, no
+    verificable por mí). Estado: AMBIGUO, P3.
+ C10 "Fecha de indexación o de publicación": las edades "5228 días" y
+    "968 días" (Zona Auto) son edades de rastreo; la única fecha explícita de
+    registro es 2012-06-21 en arempresas (NEW-01). Ninguna es fecha de
+    publicación por el comercio.
+
+--------------------------------------------------------------------------------
+9. PUNTOS CIEGOS DETECTADOS Y SU RESOLUCIÓN
+--------------------------------------------------------------------------------
+ PC-01 Fecha explícita de registro en directorios antiguos. Se buscó y se
+       encontró (NEW-01). Resuelto.
+ PC-02 Dominio correcto de laguiaonline y su dependencia de Licuo. Se abrió y
+       se analizó (NEW-03). Resuelto.
+ PC-03 Homónimo por nombre exacto en registros públicos de otras provincias.
+       Se detectó (NEW-06). Resuelto, descartado.
+ PC-04 Cómo se comporta Licuo con LIC-002 entre ciudades. Se verificó en dos
+       listados (NEW-05). Resuelto parcialmente (el vínculo sigue ambiguo).
+ PC-05 Coherencia entre las afirmaciones de los informes y el sitio publicado.
+       Se comparó (NEW-08). Resuelto (hallazgo de contradicción interna).
+ PC-06 Coordenadas del JSON-LD sin fuente (NEW-08). No resoluble sin consultar
+       Google Maps u otra fuente cartográfica con acceso: P3.
+ PC-07 Wayback/CDX de fichas (Licuo, Autoyas, arempresas, Zona Auto): SIN
+       ACCESO. Las herramientas solo abren URLs que aparecieron en resultados o
+       en el mensaje, y no hay URL de archivo web. No se intentó eludir el
+       bloqueo. Acción viable para una persona con navegador.
+ PC-08 Registro de personas jurídicas / Boletín Oficial de Entre Ríos. Una
+       búsqueda nominal de razón social no halló nada atribuible. No hay
+       consulta nominal posible con estas herramientas. NO se buscaron datos
+       tributarios de personas físicas (pertinencia de privacidad).
+ PC-09 Mercado Libre y portales: las búsquedas devolvieron solo listados
+       genéricos por ciudad/año; ningún vendedor identificable. Los
+       buscadores internos requieren navegador. Sin resultado atribuible.
+ PC-10 Marcas y cámaras sectoriales (p. ej. si el comercio figura en alguna
+       asociación de comercio automotor): una búsqueda de prensa/eventos no
+       arrojó menciones. No pertinente profundizar sin un indicio concreto.
+ PC-11 Perfiles de Google (Maps/Business) como fuente de horario, teléfono,
+       fotos, categoría y reseñas: la fuente con más probabilidad de resolver
+       C1 y C9. SIN ACCESO. Prioridad alta para el usuario.
+
+--------------------------------------------------------------------------------
+10. CONSULTAS NUEVAS REALMENTE REALIZADAS EN ESTA AUDITORÍA
+--------------------------------------------------------------------------------
+ Búsquedas web (9):
+ QRY-A01 (estándar) "Lazaro Automotores" Gualeguaychú — ruido: listados de
+         Mercado Libre, Expedia, D&B, LAGO AUTOMOTORES. Sin vendedor.
+ QRY-A02 (extendida) "Lazaro Automotores y Camiones" Gualeguaychú Primera
+         Junta 218 — Facebook, Instagram, Autoyas (extractos).
+ QRY-A03 (estándar) "432700" OR "43-2700" Gualeguaychú automotores — Kesselman
+         y ruido; la cadena numérica no se resuelve como frase exacta.
+ QRY-A04 (extendida) Lázaro González automotores Gualeguaychú prensa
+         (El Día, Pregón, Ahora) — nada sobre el comercio.
+ QRY-A05 (estándar) "493065" Gualeguaychú — ruido (Wikipedia, Wikivoyage,
+         FOTW). Sin ninguna mención de 493065 fuera de Licuo.
+ QRY-A06 (extendida) indicadores.ar empresa Lazaro Automotores Gualeguaychú
+         CUIT — hallazgos de directorios nuevos (laguiaonline, suamarillas,
+         gualeguay.licuo, arempresas, SuperGuía, Zona Auto) y ningún registro.
+ QRY-A07 (estándar) Lazaro Automotores Gualeguaychú Google Maps opiniones
+         horario — ruido (Mercado Libre, Kayak). Google Maps no abrió.
+ QRY-A08 (extendida) "LAZARO AUTOMOTORES" S.R.L. OR S.A. Entre Ríos
+         Gualeguaychú CUIT constituida — homónimo de Córdoba (BNA 2018);
+         Boletín Oficial: resultados sin relación.
+ QRY-A09 (extendida) Lázaro Automotores Gualeguaychú aniversario/entrega/
+         Primera Junta/camiones noticia — Facebook (extracto), arempresas con
+         fecha de registro 2012-06-21, Moovit, suamarillas.
+ Aperturas de URL (7): Autoyas (solo cabecera), Zona Auto (OK), Licuo
+ Gualeguaychú (OK), Licuo 13021 (robots), Licuo 245366 (HTTP 500),
+ laguiaonline (OK), Guía Industrial (OK).
+ Lectura local: index.html, privacidad.html, scripts del ZIP (búsqueda de
+ texto, sin ejecutar nada).
+ NO ejecutadas por falta de vía: Wayback/CDX, Google Maps, Facebook,
+ Instagram, Boletín Oficial ER, registro de personas jurídicas, ARCA, buscadores
+ internos de portales de autos.
+ Nota metodológica: el buscador usado devuelve ruido ante cadenas numéricas y
+ ante frases exactas; una búsqueda negativa por teléfono tiene poco valor
+ probatorio.
+
+--------------------------------------------------------------------------------
+11. LIMITACIONES TÉCNICAS Y DOCUMENTALES
+--------------------------------------------------------------------------------
+ - Facebook, Instagram y Licuo 13021 bloquean la automatización (robots).
+ - Autoyas solo entrega cabecera; sus posts se ven como extractos truncados y
+   el vínculo fecha-texto depende del orden del extracto.
+ - Licuo 245366 devuelve HTTP 500.
+ - Un solo motor de búsqueda; no resuelve bien cadenas numéricas.
+ - Sin Wayback, sin Google Maps, sin registros oficiales.
+ - Documentos previos incompletos: falta TXT_MADRE 4.5 y los seis dossiers;
+   D2 arranca en la sección 3.
+ - Datos heredados de capturas del usuario (Google Maps) no vistos.
+
+--------------------------------------------------------------------------------
+12. INFORMACIÓN QUE SIGUE SIN PODER VERIFICARSE
+--------------------------------------------------------------------------------
+ Razón social y CUIT; titularidad; fecha de fundación; continuidad 2012-2023;
+ horarios reales; vigencia de unidades y precios; condiciones de financiación
+ y permuta (bancos, tasas, requisitos); si 03446 493065 o un domicilio en RN
+ 14 alguna vez fueron del comercio; reseñas de Google; correo vigente;
+ coordenadas del mapa; existencia de sitio web propio o dominios antiguos.
+
+--------------------------------------------------------------------------------
+13. ASUNTOS DECLARADOS NO PERTINENTES (con justificación)
+--------------------------------------------------------------------------------
+ - Datos tributarios o personales de Lázaro González y Román González: no se
+   investigan. Son nombres autodeclarados en perfiles comerciales; el encargo
+   pide no incluir datos privados irrelevantes y no inferir titularidad.
+ - Asociaciones y eventos del sector sin indicio concreto: no hay un solo
+   resultado que nombre al comercio; buscar por proximidad geográfica o por
+   apellido está expresamente excluido por el encargo.
+ - Plataformas sin vía de consulta identificable con estas herramientas (p.
+   ej. buscadores internos con JavaScript): se listan como acción residual,
+   no como búsqueda realizada.
+
+--------------------------------------------------------------------------------
+14. MATRIZ DE VACÍOS Y ACCIONES (sec. 8 del encargo)
+--------------------------------------------------------------------------------
+ Prioridad: P1 crítico / P2 importante / P3 complementario / P4 no resoluble
+ con herramientas actuales.
+
+ GAP-01 | P1 | LIC-002 (493065, RN 14): ¿es del comercio?
+   Área I/C. Búsquedas: QRY-A05, QRY-A06, aperturas de Licuo. Evidencia: ver
+   C4. Falta: confirmación del comercio y archivos históricos de Licuo.
+   Acción: preguntar al comercio si alguna vez usó 03446 493065 o un
+   domicilio sobre RN 14; Wayback de ambas fichas. Viabilidad: alta
+   (confirmación directa) / nula con mis herramientas. Valor: alto. Estado:
+   ABIERTO (AMBIGUO).
+ GAP-02 | P1 | Razón social / CUIT / titularidad.
+   Área A/H. Búsquedas: QRY-A06, QRY-A08. Evidencia: ninguna atribuible.
+   Falta: registro oficial. Acción: Boletín Oficial de Entre Ríos, registro de
+   personas jurídicas, constancia ARCA que aporte el propio comercio.
+   Viabilidad: media (requiere navegador y dato del comercio). Estado:
+   ABIERTO.
+ GAP-03 | P2 | Horarios reales (C1). Acción: confirmación directa; ficha de
+   Google Maps. Viabilidad: alta. Estado: ABIERTO.
+ GAP-04 | P2 | Anuncios individuales con URL (autos, camionetas, camiones).
+   Acción: pegar 3 a 5 URLs/textos de posts de Facebook/Instagram; consultar
+   buscadores internos de Mercado Libre y otros portales con el nombre y el
+   teléfono. Viabilidad: media. Estado: ABIERTO.
+ GAP-05 | P2 | Antigüedad/fundación y continuidad. Evidencia: autodeclaración
+   (~1980) y registro de directorio 2012-06-21. Acción: hemeroteca, Wayback,
+   confirmación directa. Viabilidad: media. Estado: ABIERTO.
+ GAP-06 | P2 | Contraste sitio vs. informes (NEW-08): publicar o retirar
+   correo, nombres, "46 años", financiación; fuente de coordenadas. Acción:
+   decisión del dueño del proyecto con confirmación del comercio. Viabilidad:
+   alta. Estado: ABIERTO (decisión pendiente).
+ GAP-07 | P2 | Presencia web histórica (sitio propio, dominios, páginas
+   desaparecidas). Acción: Wayback/CDX de facebook.com/lazaroautomotoresycamiones,
+   fichas de directorios; whois. Viabilidad: media. Estado: ABIERTO.
+ GAP-08 | P3 | Reseñas de Google y Facebook. Acción: abrir Google Maps y la
+   pestaña de reseñas de Facebook. Estado: ABIERTO.
+ GAP-09 | P3 | Condiciones de financiación y permuta. Acción: confirmación
+   directa. Estado: ABIERTO.
+ GAP-10 | P3 | Prensa local y eventos. QRY-A04 y QRY-A09 sin resultado. Acción:
+   buscar en los sitios de R2820, El Día y Pregón desde navegador. Estado:
+   ABIERTO (búsqueda negativa limitada).
+ GAP-11 | P3 | C9 (E3269 vs 2820) y coordenadas. Acción: Google Maps.
+   Estado: ABIERTO.
+ GAP-12 | P4 | Vigencia de unidades y precios de los posts. Requiere
+   confirmación directa. Estado: no resoluble actualmente.
+ GAP-13 | P4 | Contenido histórico de Facebook/Instagram. Bloqueado por
+   robots. Estado: no resoluble actualmente.
+
+ Ejecutado de P1/P2 viable con mis herramientas: todo lo que tenía una vía
+ de consulta fue ejecutado (QRY-A01 a A09 y las 7 aperturas). Lo que queda
+ abierto no tiene vía con estas herramientas: es viable para una persona
+ con navegador o con acceso al comercio.
+
+--------------------------------------------------------------------------------
+15. ESTADO DE CIERRE POR ÁREA Y CONCLUSIÓN GENERAL
+--------------------------------------------------------------------------------
+ A Identidad y nombre comercial ........ Cerrada dentro del alcance público
+                                          accesible, con limitaciones
+ B Presencia digital propia ............ Parcialmente cubierta; requiere acción
+ C Directorios .......................... Cerrada dentro del alcance público
+                                          accesible, con limitaciones
+ D Inventario e historial ............... Parcialmente cubierta; requiere acción
+ E Redes sociales ....................... Parcialmente cubierta; requiere acción
+ F Reputación ........................... Parcialmente cubierta; requiere acción
+ G Historia comercial ................... Parcialmente cubierta; requiere acción
+ H Registros y documentación ............ No investigada en fuentes primarias
+                                          (parcial por búsqueda nominal)
+ I Ubicaciones y contactos .............. Cerrada dentro del alcance público
+                                          accesible, con limitaciones
+                                          (LIC-002 sigue abierta)
+ J Prensa y archivos históricos ......... Parcialmente cubierta; requiere acción
+ K Ecosistema comercial ................. Cerrada dentro del alcance público
+                                          accesible, con limitaciones
+ L Fuentes especializadas ............... Parcialmente cubierta; requiere acción
+
+ Criterios de cierre operativo (sec. 10):
+  1 Áreas evaluadas: SÍ (12 de 12).
+  2 Fuentes clave verificadas o con limitación documentada: SÍ.
+  3 Sin tareas P1/P2 viables sin ejecutar: SÍ con mis herramientas; NO si se
+    cuenta lo viable para una persona con navegador (GAP-01 a GAP-07).
+  4 Afirmaciones importantes con evidencia trazable: PARCIAL (muchas por
+    extracto, no por apertura directa).
+  5 Contradicciones resueltas o abiertas de forma explícita: SÍ (abiertas).
+  6 Búsquedas negativas con su alcance real: SÍ (sec. 10 y 11).
+  7 Duplicados identificados: SÍ (sec. 6).
+  8 Asuntos pendientes explicados: SÍ (sec. 14).
+ Conclusión: la investigación NO puede declararse operativamente completa.
+ Está cerrada en identidad básica, contactos, directorios y ecosistema; abierta
+ en registros, historia, inventario, reputación, redes y presencia histórica.
+ No se afirma ningún porcentaje de cobertura de internet.
+
+--------------------------------------------------------------------------------
+16. ACCIONES RESIDUALES (por valor y viabilidad)
+--------------------------------------------------------------------------------
+ 1. Confirmación directa con el comercio (alto valor, alta viabilidad):
+    horarios; uso de 03446 493065 o RN 14; razón social; autorización para
+    publicar correo, nombres y "46 años"; condiciones de financiación/permuta;
+    número de WhatsApp vigente.
+ 2. Abrir Google Maps: ficha, horario, reseñas, categoría, código postal y
+    coordenadas (resuelve C1, C9, GAP-08, GAP-11).
+ 3. Pegar aquí 3 a 5 URLs o textos de posts recientes de Facebook/Instagram
+    para convertir ADV-001..005 en anuncios individuales verificables.
+ 4. Wayback/CDX de facebook.com/lazaroautomotoresycamiones y de las fichas de
+    Licuo, Autoyas, arempresas y Zona Auto.
+ 5. Boletín Oficial de Entre Ríos y registro de personas jurídicas (con la
+    razón social que aporte el comercio).
+ 6. Buscadores internos de Mercado Libre y portales de autos, por nombre y
+    por 03446 432700.
+ 7. Prensa local (R2820, El Día, Pregón) y hemeroteca de Gualeguaychú.
+ 8. Decidir sobre el sitio: retirar o confirmar correo, nombres, "46 años" y
+    financiación, y documentar la fuente de las coordenadas (NEW-08).
+
+================================================================================
+FIN DE LA AUDITORÍA
+================================================================================
