@@ -3,6 +3,8 @@ AUDITORÍA DE COBERTURA OSINT — LÁZARO AUTOMOTORES Y CAMIONES
 Gualeguaychú, Entre Ríos, Argentina
 ================================================================================
 Archivo: lazaro_auditoria_total_cobertura_osint.txt (UTF-8)
+VERSIÓN 2 (2026-10-14): incorpora la ronda de Manus y la captura de la ficha de
+Google Maps aportada por el usuario. Ver sección 17 (prevalece sobre lo anterior).
 Fecha de auditoría / corte de consulta: 2026-10-14
 Herramientas disponibles en esta auditoría: búsqueda web (modo estándar y
 extendido), apertura de URLs que aparecieron en resultados o en el encargo, y
@@ -310,8 +312,11 @@ Fuentes de D1/D2 que esta auditoría REVERIFICÓ abriéndolas:
           description.
         - Usa el horario de Zona Auto (8:30-12:30 y 17:00-20:30; Sáb 8:00-
           12:30), que contradice a laguiaonline (8:00 / 16:30-20:30).
-        - El JSON-LD incluye coordenadas (-33.0056114, -58.5214283) sin fuente
-          documentada en D1 ni D2: NO VERIFICABLE.
+        - El JSON-LD incluye coordenadas (-33.0056114, -58.5214283).
+          [CORREGIDO EN V2, sec. 17: esas coordenadas figuran en el enlace
+          de Google Maps del propio sitio, junto con el identificador de lugar
+          0x95b00788edf01673:0x80b547a065cb1bb4 y el nombre "Lazaro
+          Automotores"; tienen fuente. Siguen sin verificarse contra el pin.]
         - privacidad.html menciona E3269 solo como nota explicativa (Google
           Maps mostraría E3269; el sitio usa 2820). No hay error residual,
           pero el dato de Maps no pude verificarlo.
@@ -614,6 +619,88 @@ Fuentes de D1/D2 que esta auditoría REVERIFICÓ abriéndolas:
  7. Prensa local (R2820, El Día, Pregón) y hemeroteca de Gualeguaychú.
  8. Decidir sobre el sitio: retirar o confirmar correo, nombres, "46 años" y
     financiación, y documentar la fuente de las coordenadas (NEW-08).
+
+--------------------------------------------------------------------------------
+17. ACTUALIZACIÓN (V2): RONDA DE MANUS Y CAPTURA DE GOOGLE MAPS
+--------------------------------------------------------------------------------
+17.1 EVALUACIÓN DEL INFORME DE MANUS (lazaro_cierre_huecos_manus.txt + EV-01/EV-02)
+ - EV-01.png muestra el mapa con un pin rotulado "Lazaro Automotores" sobre
+   Primera Junta (entre San Juan e Ituzaingó). El panel lateral está en
+   carga y el buscador dice "Lazaro Automotores", no "Lazaro Automotores y
+   Camiones" como figura en la URL del informe. La captura NO muestra
+   E3269, el teléfono ni "Abierto · Cierra a las 8:30 p.m.".
+ - Por eso H-01 a H-04 del informe de Manus quedan como NO VERIFICADO. El
+   prompt entregado a Manus ya mencionaba E3269 (riesgo de eco).
+ - EV-02.png muestra solo "[]", sin la URL consultada. Manus dice que el CDX
+   de Zona Auto también devolvió "[]", pese a que esa página existe y es
+   pública: eso indica que la consulta o el entorno son poco confiables y
+   que el "[]" de Facebook no es concluyente. No hay captura de esa segunda
+   consulta.
+ - El error de DNS contra palavecino.licuo.com.ar fue del entorno de Manus:
+   desde esta auditoría el mismo dominio respondió con bloqueo por robots.
+ - Tareas 4 a 7 casi sin ejecutar: sin resultados de portales ni de prensa,
+   sin consulta efectiva a boletines oficiales, sin dominios propios ni WHOIS.
+   H-07 y H-11 dicen "reverificado" y no lo están. Se menciona "Grupo Lázaro
+   S.R.L." y un agregador "Maptons" sin datos ni URL.
+ - Nada de ese informe contradice esta auditoría.
+
+17.2 CAPTURA DE LA FICHA DE GOOGLE MAPS (aportada por el usuario; no abierta
+ por esta auditoría; hora de captura no indicada)
+ - Nombre de la ficha: "Lazaro Automotores". Categoría: "Concesionario de
+   automóviles". Calificación 3,9 con 7 opiniones.
+ - Dirección: "Primera Junta 218, E3269 Gualeguaychú, Entre Ríos".
+ - Horario: lunes a viernes 8:30-12:30 y 17:00-20:30; sábado 8:00-12:30;
+   domingo cerrado. Estado mostrado: "Cerrado" (miércoles).
+ - Recortado fuera de la captura: teléfono, sitio web, pestaña de opiniones,
+   fotos, coordenadas.
+ - Hora de captura (informada por el usuario): 18:17, miércoles 14/10/2026,
+   hora argentina. Con el horario que la propia ficha muestra (miércoles
+   8:30-12:30 y 17:00-20:30), a esa hora debería figurar "Abierto". Figura
+   "Cerrado". Es una INCONSISTENCIA INTERNA de la captura, no resuelta.
+   Explicaciones posibles (a descartada; b y c sin verificar):
+    a) DESCARTADA: el usuario confirmó que el dispositivo estaba en hora de
+       Argentina.
+    b) Horario especial o cierre cargado en la ficha para ese día y no visible
+       en el recorte.
+    c) Error o demora de Google al calcular el estado.
+   Consecuencia: el estado "Cerrado" no sirve como evidencia de que el local
+   estuviera cerrado; el horario semanal sí es lo que la ficha publica. La
+   afirmación de Manus ("Abierto · Cierra a las 8:30 p.m." a las 18:02) es
+   compatible con el horario, pero sigue sin respaldo en su captura.
+   No tengo constancia de que el 14/10/2026 fuera feriado.
+
+17.3 EFECTO SOBRE LAS CONTRADICCIONES Y VACÍOS
+ C1 HORARIOS: el horario de Maps coincide exactamente con el de Zona Auto y con
+    el del sitio. laguiaonline (8:00 / 16:30-20:30) y Autoyas (heredado)
+    discrepan. Estado: PROBABLE la versión Maps/Zona Auto. No es CONFIRMADO:
+    no se sabe quién cargó el dato en Maps y Zona Auto pudo copiarlo. GAP-03
+    baja a P3 (confirmación del comercio).
+ C3 CÓDIGO POSTAL: CONFIRMADO que Google Maps muestra E3269 (captura del
+    usuario). Los directorios dicen 2820 (CPA E2820DNP según informe previo).
+    No sé a qué zona corresponde E3269 ni cuál es el correcto para el
+    comercio. Acción: buscador de CPA del Correo Argentino. Estado: AMBIGUO.
+ H5 / GAP-08 RESEÑAS: calificación y cantidad (3,9 / 7) pasan de "heredadas" a
+    VISTAS en captura. Contenido y fechas de las opiniones siguen sin verse.
+ GAP-11 COORDENADAS: tienen fuente (enlace de Maps del sitio); no verificadas
+    contra el pin. Se retira la observación "sin fuente" de NEW-08.
+ GAP-07 WAYBACK: ronda de Manus no concluyente (17.1). Sigue ABIERTO.
+ Sin cambio: GAP-01 (493065/RN 14), GAP-02 (razón social), GAP-04 (anuncios),
+ GAP-05 (antigüedad), GAP-06 (decisión sobre datos publicados), GAP-09,
+ GAP-10, GAP-12, GAP-13.
+
+17.4 CAMBIOS REALIZADOS EN EL SITIO (privacidad.html)
+ 1. Origen de la información: el horario de Google Maps coincide con Zona
+    Auto; La Guía Online publica otro; ninguna es del negocio.
+ 2. Código postal: E3269 verificado en captura de la ficha (14/10/2026).
+ 3. Reseñas: la ficha de Maps muestra 3,9 con 7 opiniones; no se reproducen
+    por no poder verificar contenido ni fechas.
+ index.html no se modificó: su texto sobre horario y código postal ya era
+ coherente con la evidencia. Correo, nombres, "46 años" y financiación se
+ mantienen sin cambios hasta que el comercio los confirme (GAP-06).
+
+17.5 PRÓXIMO PASO MÁS ÚTIL
+ Capturas de la ficha de Maps con el panel completo (teléfono, sitio web,
+ pestaña de opiniones) y de los últimos posts de Facebook e Instagram.
 
 ================================================================================
 FIN DE LA AUDITORÍA
