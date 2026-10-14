@@ -1,4 +1,4 @@
-/* Horizonte Automotores · navegación de sitio y comportamiento mobile-first. */
+/* Lázaro Automotores · navegación de sitio y comportamiento mobile-first. */
 (function () {
   'use strict';
   var saveData = !!(navigator.connection && navigator.connection.saveData);

@@ -1,4 +1,4 @@
-/* Horizonte Automotores · abre la reserva dentro del index (sin pestaña nueva).
+/* Lázaro Automotores · abre la reserva dentro del index (sin pestaña nueva).
    Reutiliza reserva.html tal cual, cargada en un diálogo a pantalla completa. */
 (function () {
   'use strict';

@@ -1,0 +1,3 @@
+# Demo privada de Lázaro Automotores: no indexar hasta que el negocio la apruebe.
+User-agent: *
+Disallow: /

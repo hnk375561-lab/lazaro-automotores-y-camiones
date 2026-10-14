@@ -1,4 +1,4 @@
-/* Horizonte Automotores · carrusel del hero: cambia de foto cada 2 segundos, de forma permanente.
+/* Lázaro Automotores · carrusel del hero: cambia de foto cada 2 segundos, de forma permanente.
    Solo se detiene con la pestaña oculta o si el sistema pide reducir movimiento. */
 (function () {
   'use strict';

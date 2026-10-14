@@ -1,0 +1,30 @@
+/* Lázaro Automotores · css/lazaro.css
+   Capa propia de Lázaro: marca tipográfica provisional (sin logotipo hasta recibir el original),
+   hero sin fotografías (se agregan solo con material autorizado) y estado «catálogo en preparación». */
+
+/* Marca tipográfica provisional */
+.wm{display:inline-flex;flex-direction:column;gap:2px;line-height:1;color:#fff;text-transform:uppercase;letter-spacing:.14em}
+.wm b{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:22px;letter-spacing:.12em}
+.wm i{font-style:normal;font-family:"Instrument Sans",system-ui,sans-serif;font-weight:600;font-size:9px;letter-spacing:.42em;color:var(--acc,#e8553d)}
+.mark .wm{padding:2px 0}
+.wm--lg b{font-size:clamp(28px,4vw,40px)}
+.wm--lg i{font-size:clamp(10px,1.2vw,13px)}
+.wm--ft{margin:0 0 14px}
+.wm--ft b{font-size:26px}
+html body .hz-v71 .hz-brand{background:#0a1012;border-color:rgba(232,85,61,.6);border-bottom-color:#e8553d}
+html body .hz-v71 .hz-brand .wm{color:#fff}
+@media (max-width:700px){.wm b{font-size:19px}}
+
+/* Hero sin fotografías: escena 100 % CSS */
+.hero-media{background:#0a1012}
+.hero-fx{position:absolute;inset:0;display:block;background:
+  radial-gradient(70% 60% at 82% 18%,rgba(232,85,61,.20),transparent 60%),
+  radial-gradient(60% 50% at 12% 92%,rgba(232,85,61,.10),transparent 62%),
+  linear-gradient(160deg,#10181a 0%,#0a1012 55%,#070b0c 100%)}
+.hero-fx::after{content:"LÁZARO / AUTOMOTORES";position:absolute;right:clamp(20px,4vw,64px);bottom:clamp(20px,4vw,48px);font:700 11px/1 var(--b,system-ui,sans-serif);letter-spacing:.5em;color:rgba(255,255,255,.28)}
+
+/* Catálogo en preparación */
+.vacio--cat{margin:28px 0 8px;padding:22px 24px;border:1px dashed rgba(255,255,255,.28);background:rgba(255,255,255,.03);color:var(--s2,#e6e6e6);text-align:center}
+
+/* Sin unidades cargadas no hay filtros ni comparador */
+#tools[hidden],.inventory-section .filter-bar:empty{display:none!important}

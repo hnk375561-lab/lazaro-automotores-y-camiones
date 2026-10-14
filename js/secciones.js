@@ -1,4 +1,4 @@
-/* Horizonte Automotores · js/secciones.js
+/* Lázaro Automotores · js/secciones.js
    1) Catálogo: filtros, orden y comparador de hasta 4 unidades (lee el JSON de #cat-data, que genera scripts/build-index.mjs desde data/vehicles.json).
    2) Formularios «Tu usado» y «Contanos qué auto buscás»: arman un mensaje que la persona copia y envía ella.
       No se transmite ni se guarda nada.
@@ -450,7 +450,7 @@
       var sun = el('span', null, 'cmp-sun'); sun.setAttribute('aria-hidden', 'true'); sun.innerHTML = '<svg viewBox="0 0 64 36" focusable="false"><path d="M6 30a26 26 0 0 1 52 0"/><path d="M2 30h60"/><path d="M32 4v5M12 11l3 3M52 11l-3 3"/></svg>';
       tt.appendChild(sun);
       var tx = el('div', null, 'cmp-tx');
-      tx.appendChild(el('p', 'Horizonte Automotores', 'cmp-ey'));
+      tx.appendChild(el('p', 'Lázaro Automotores', 'cmp-ey'));
       var h = el('h2', 'Comparador'); h.id = 'cmp-ttl'; tx.appendChild(h);
       tx.appendChild(el('p', sel.length + ' unidades, lado a lado', 'cmp-sub'));
       tt.appendChild(tx); hd.appendChild(tt);
@@ -664,7 +664,7 @@
       /* acciones */
       var ac = el('div', null, 'fi-ac');
       ac.appendChild(enlace(ctx.wa ? 'Consultar por WhatsApp' : 'Consultar por Facebook', a.href, 'btn p sm', true));
-      ac.appendChild(enlace('Agendar visita y prueba de manejo', 'reserva.html', 'btn sm', false));
+      ac.appendChild(enlace('Coordinar visita', '#visita', 'btn sm', false));
       info.appendChild(ac);
       var ac2 = el('div', null, 'fi-ac2');
       if (a.hrefFin) ac2.appendChild(enlace('Consultar financiación', a.hrefFin, 'btn sm', true));

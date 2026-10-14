@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════════════════════════════════════
-   HORIZONTE AUTOMOTORES · CAPA DE MOVIMIENTO  (js/motion.js)
+   LÁZARO AUTOMOTORES · CAPA DE MOVIMIENTO  (js/motion.js)
    GSAP = motor · ScrollTrigger = narrativa · Lenis = inercia del scroll.
 
    Archivo único y autocontenido: solo importa el bundle ya servido en js/vendor/.

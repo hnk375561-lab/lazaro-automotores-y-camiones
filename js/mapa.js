@@ -1,4 +1,4 @@
-/* Horizonte Automotores · js/mapa.js
+/* Lázaro Automotores · js/mapa.js
    Mapa interactivo de «Horarios y ubicación». Leaflet + OpenStreetMap se cargan al acercarse a la sección
    (o al tocar «Ver mapa»). Mapa siempre claro (sin filtros de color, que eran lo que lo hacía pesado), marcador con el nombre, botón para centrar y, si fallan las teselas, mapa de Google. */
 (function () {

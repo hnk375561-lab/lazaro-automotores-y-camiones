@@ -1,4 +1,4 @@
-/* Horizonte Automotores · js/horarios.js
+/* Lázaro Automotores · js/horarios.js
    Sección «Horarios y ubicación»: estado «Abierto ahora / Cerrado ahora» según el horario de data/dealership.json
    (viaja en data-semana), cuenta regresiva en horas, minutos y segundos hasta que abre o cierra, y resaltado de hoy.
    Hora de Argentina (UTC-3, sin horario de verano). Sin red ni cookies.

@@ -1,4 +1,4 @@
-// Verificador de enlaces de Horizonte.  Uso:   node scripts/check-links.mjs            (solo enlaces internos y formatos)
+// Verificador de enlaces de Lázaro Automotores.  Uso:   node scripts/check-links.mjs            (solo enlaces internos y formatos)
 //                                           node scripts/check-links.mjs --external (además prueba los externos por red)
 import fs from 'node:fs';
 import path from 'node:path';
@@ -49,8 +49,8 @@ for (const f of jsFiles) {
 async function probe(url) {
   const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 15000);
   try {
-    let r = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: ctl.signal, headers: { 'user-agent': 'Mozilla/5.0 (compatible; horizonte-linkcheck)' } });
-    if (r.status >= 400) r = await fetch(url, { method: 'GET', redirect: 'follow', signal: ctl.signal, headers: { 'user-agent': 'Mozilla/5.0 (compatible; horizonte-linkcheck)' } });
+    let r = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: ctl.signal, headers: { 'user-agent': 'Mozilla/5.0 (compatible; lazaro-linkcheck)' } });
+    if (r.status >= 400) r = await fetch(url, { method: 'GET', redirect: 'follow', signal: ctl.signal, headers: { 'user-agent': 'Mozilla/5.0 (compatible; lazaro-linkcheck)' } });
     return { status: r.status, final: r.url };
   } catch (e) { return { status: 0, error: e.name === 'AbortError' ? 'timeout' : e.message }; } finally { clearTimeout(t); }
 }
