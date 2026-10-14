@@ -37,7 +37,7 @@ const LEYENDA = `Demo ilustrativa construida a partir de información pública. 
 const FONTS = '@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2")}\n@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/instrument-sans-latin.woff2) format("woff2")}\n';
 const CSS = read('scripts/estilos.css').trim();
 
-const OG = `<meta property="og:image" content="https://hnk375561-lab.github.io/horizonte/images/og-horizonte.jpg">\n<meta property="og:image:type" content="image/jpeg">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="Horizonte Automotores · Autos y motos en María Grande, Entre Ríos">\n<meta name="twitter:card" content="summary_large_image">\n`;
+const OG = ''; // sin imagen social propia de Lázaro todavía
 const robotsMeta = demo ? '<meta name="robots" content="noindex, nofollow">\n' : '';
 const canon = (p) => (siteUrl ? `<link rel="canonical" href="${siteUrl}${p}">\n<meta property="og:url" content="${siteUrl}${p}">\n` : '');
 
@@ -172,7 +172,7 @@ const faq = [
   hasSvc('permuta') ? qa('¿Reciben mi usado como parte de pago?', `Según informa ${esc(GNAME)}, sí: se reciben vehículos usados como parte de pago. Armá el mensaje en la sección «Tu usado» y envialo a la agencia.`) : '',
   hasSvc('tasacion') ? qa('¿La tasación tiene costo?', `Según informa ${esc(GNAME)} en su sitio, la tasación es sin cargo.`) : '',
   hasSvc('garantia') ? qa('¿Los autos tienen garantía?', `Los usados pasan por revisión técnica y se entregan con garantía. Las condiciones dependen de cada vehículo: consultalas por la unidad que te interese.`) : '',
-  qa('¿Cómo financio?', `Ofrecemos financiación para autos y motos y figuramos en el listado de Créditos Más Autos del Banco de la Nación (${esc(BNAFECHA)}). Los montos y las condiciones dependen de la unidad y de cada solicitante.`),
+  qa('¿Cómo financio?', `Ofrecemos financiación para vehículos y figuramos en el listado de Créditos Más Autos del Banco de la Nación (${esc(BNAFECHA)}). Los montos y las condiciones dependen de la unidad y de cada solicitante.`),
   qa('¿Los precios publicados son definitivos?', `No necesariamente. Cada tarjeta muestra el precio de la ficha pública en la fecha en que se relevó: consultalo antes de ir.`),
   qa('¿Cómo coordino una visita?', `Entrá a <a href="reserva.html">Agendar visita y prueba de manejo</a>, elegí un día y una franja y enviá la consulta. No es un turno: el día y la hora se acuerdan con la agencia.`),
   H.display ? qa('¿Cuándo atienden?', `Los días y franjas, y si estamos abiertos ahora, están en la sección <a href="#horarios">Horarios</a>.`) : '',
@@ -234,7 +234,7 @@ const secUsado = hasSvc('permuta') ? `
 <p class="ey">Tu próximo paso</p><h2 id="usado-t">Entregá tu usado como <em>parte de pago</em></h2>
 <p class="sec-p">${hasSvc('tasacion') ? 'Recibimos vehículos usados como parte de pago y la tasación es sin cargo, según informa ' + esc(GNAME) + '. ' : 'Recibimos vehículos usados como parte de pago, según informa ' + esc(GNAME) + '. '}Contanos cuál es y armá el mensaje para enviárselo a la agencia.</p>
 <ol class="cv-steps"><li><b>Contanos qué tenés</b><span>Marca, modelo, año y kilometraje alcanzan para empezar.</span></li><li><b>Mirá tu mensaje armarse</b><span>Se escribe solo a medida que completás los datos.</span></li><li><b>Envialo a la agencia</b><span>Por WhatsApp. Las condiciones se acuerdan con ellos.</span></li></ol>
-<ul class="cv-pills"><li>Parte de pago</li>${hasSvc('tasacion') ? '<li>Tasación sin cargo</li>' : ''}<li>Autos y motos</li></ul>
+<ul class="cv-pills"><li>Parte de pago</li>${hasSvc('tasacion') ? '<li>Tasación sin cargo</li>' : ''}<li>Vehículos</li></ul>
 </div>
 <div class="conversion-panel cv-panel">
 ${cvForm({
@@ -420,8 +420,8 @@ ${autos.length ? `<li><b>${autos.length}</b><span>unidades publicadas en esta we
 <div class="nz-body"><div class="w">
 <h3 class="nz-h">Qué podés resolver con nosotros</h3>
 <ul class="nz-tiles">
-<li class="nz-tile"><span class="nz-ic">${ICN.car}</span><h4>Autos y motos</h4><p>Usados publicados para ${esc(L.city)} y financiación para llevarlos.</p><a href="#unidades">Ver unidades</a></li>
-<li class="nz-tile"><span class="nz-ic">${ICN.coin}</span><h4>Financiación</h4><p>Ofrecemos financiación para autos y motos. Los montos y las condiciones dependen de la unidad y de cada solicitante.</p><a href="#financiacion">Ver cómo financiar</a></li>
+<li class="nz-tile"><span class="nz-ic">${ICN.car}</span><h4>Vehículos</h4><p>Usados publicados para ${esc(L.city)} y financiación para llevarlos.</p><a href="#unidades">Ver unidades</a></li>
+<li class="nz-tile"><span class="nz-ic">${ICN.coin}</span><h4>Financiación</h4><p>Ofrecemos financiación para vehículos. Los montos y las condiciones dependen de la unidad y de cada solicitante.</p><a href="#financiacion">Ver cómo financiar</a></li>
 ${hasSvc('permuta') ? `<li class="nz-tile"><span class="nz-ic">${ICN.swap}</span><h4>Tu usado cuenta</h4><p>Se reciben usados como parte de pago${hasSvc('tasacion') ? ' y la tasación es sin cargo' : ''}, según informa ${esc(GNAME)}.</p><a href="#tu-usado">Armar mi consulta</a></li>` : ''}
 ${hasSvc('garantia') ? `<li class="nz-tile"><span class="nz-ic">${ICN.shield}</span><h4>Revisión y garantía</h4><p>Los usados pasan por revisión técnica y se entregan con garantía, según informa ${esc(GNAME)}. Las condiciones dependen de cada vehículo.</p><a href="#preguntas">Ver preguntas</a></li>` : ''}
 <li class="nz-tile"><span class="nz-ic">${ICN.group}</span><h4>Respaldo del grupo</h4><p>Forma parte del ${esc(GNAME)}, con sucursales en Paraná y Santa Fe.</p><a href="#sucursales">Ver sucursales</a></li>
@@ -439,8 +439,8 @@ const ld = {
 };
 
 const index = page({
-  title: `${NAME} · Autos y motos en ${L.city}, ${L.province}`,
-  desc: `${NAME} en ${L.city}, ${L.province}: autos y motos con financiación. Visitanos en ${L.address} o mirá las unidades en Facebook e Instagram.`,
+  title: `${NAME} · Concesionario multimarca en ${L.city}, ${L.province}`,
+  desc: `${NAME} en ${L.city}, ${L.province}: concesionario multimarca. Visitanos en ${L.address} o mirá las unidades en Facebook e Instagram.`,
   file: 'index.html',
   extraHead: `<script type="application/ld+json">${JSON.stringify(ld)}</script>\n<script defer src="js/secciones.js"></script>\n<script defer src="js/mapa.js"></script>\n<script defer src="js/horarios.js"></script>
 <script defer src="js/site.js"></script>\n<script defer src="js/hero-rail.js"></script>\n`,
@@ -454,8 +454,8 @@ const index = page({
 <figure class="hero-slide hero-slide--04" data-hero-slide role="group" aria-roledescription="diapositiva" aria-label="Fotografía" aria-hidden="true"><img src="images/hero/horizonte-slide-04.webp" width="1440" height="1440" alt="" loading="lazy" decoding="async"></figure>
 </div>
 <div class="hx-copy">
-<p class="ey">Horizonte Automotores</p>
-<h1><span class="sr">${esc(NAME)}: </span>Autos y motos <em>en ${esc(L.city)}</em></h1>
+<p class="ey">${esc(NAME)}</p>
+<h1><span class="sr">${esc(NAME)}: </span>${esc(NAME)}: <em>en ${esc(L.city)}</em></h1>
 <p class="lead">Concesionario del ${esc(GNAME)}. Usados multimarca, financiación y tu usado como parte de pago.</p>
 <div class="row"><a class="btn p" href="#unidades">Ver unidades</a>${C.whatsApp ? `<a class="btn" href="${WA}" ${EXT}>Escribir por WhatsApp</a>` : ''}<a class="btn lnk" href="${L.mapsUrl}" ${EXT}>Cómo llegar</a></div></div>
 <a class="hx-down" href="#unidades">Explorá las unidades</a>
@@ -465,14 +465,14 @@ ${secHorarios}
 <section id="unidades" class="inventory-section" aria-labelledby="unidades-t"><div class="w wide">
 <div class="inventory-head">
 <div class="inventory-title"><p class="ey reveal">Catálogo seleccionado · ${esc(L.city)}</p><h2 id="unidades-t" class="reveal">Nuestras <em>unidades</em></h2><p class="sec-p">Usados multimarca publicados para María Grande, con financiación y la posibilidad de tomar tu usado como parte de pago.</p></div>
-<div class="inventory-meta" aria-label="Resumen del catálogo"><span class="inventory-meta-kicker">Horizonte Automotores</span><span>Unidades publicadas en esta web</span><i aria-hidden="true"></i></div>
+<div class="inventory-meta" aria-label="Resumen del catálogo"><span class="inventory-meta-kicker">${esc(NAME)}</span><span>Unidades publicadas en esta web</span><i aria-hidden="true"></i></div>
 </div>
 <div class="inventory-rule" aria-hidden="true"><span></span><small>María Grande · Entre Ríos</small><span></span></div>
 ${unidades}
 </div></section>
 
 <section class="finance-section" id="financiacion" aria-labelledby="fin-t"><div class="w">
-<div class="finance-head"><div><p class="ey">Financiación y servicios</p><h2 id="fin-t">Financiá tu <em>próximo vehículo</em></h2><p class="sec-p">Ofrecemos financiación para autos y motos. Los montos y condiciones dependen de la unidad y de cada solicitante: consultanos por la que te interese.</p></div><aside class="finance-aside"><span>Horizonte Automotores</span><p>Encontrá una forma de avanzar hacia tu próxima unidad.</p></aside></div>
+<div class="finance-head"><div><p class="ey">Financiación y servicios</p><h2 id="fin-t">Financiá tu <em>próximo vehículo</em></h2><p class="sec-p">Ofrecemos financiación para vehículos. Los montos y condiciones dependen de la unidad y de cada solicitante: consultanos por la que te interese.</p></div><aside class="finance-aside"><span>${esc(NAME)}</span><p>Encontrá una forma de avanzar hacia tu próxima unidad.</p></aside></div>
 <div class="finance-rule" aria-hidden="true"><span></span><small>Servicios para moverte mejor</small><span></span></div>
 <div class="cards finance-cards"><div class="card finance-card"><span class="finance-card-no">Financiación</span><h3>Créditos Más Autos</h3><p>Figuramos en el listado de concesionarias adheridas a Créditos Más Autos del Banco de la Nación Argentina (listado de ${esc(BNAFECHA)}). <a href="${BNA}" ${EXT}>Ver el listado</a>.</p></div>${hasSvc('permuta') || hasSvc('tasacion') ? `<div class="card finance-card"><span class="finance-card-no">Tu usado</span><h3>Tu usado, parte de pago</h3><p>${[hasSvc('permuta') ? 'Recibimos vehículos usados como parte de pago.' : '', hasSvc('tasacion') ? 'La tasación es sin cargo.' : ''].filter(Boolean).join(' ')}</p></div>` : ''}${hasSvc('garantia') ? `<div class="card finance-card"><span class="finance-card-no">Respaldo</span><h3>Revisión técnica y garantía</h3><p>Los usados pasan por revisión técnica antes de publicarse y se entregan con garantía. Las condiciones dependen de cada vehículo.</p></div>` : ''}</div>
 <div class="row fin-cta"><a class="btn p" href="${wa('Hola! Quiero consultar un plan a medida.') || FB}" ${EXT}>${C.whatsApp ? 'Consultar un plan a medida' : 'Consultar por Facebook'}</a><a class="btn" href="#tu-usado">Solicitar tasación personalizada</a></div>
@@ -611,7 +611,7 @@ write('robots.txt', demo ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllo
 const smPath = path.join(root, 'sitemap.xml');
 if (!demo && siteUrl) write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}</loc></url>\n  <url><loc>${siteUrl}reserva.html</loc></url>\n  <url><loc>${siteUrl}privacidad.html</loc></url>\n</urlset>\n`);
 else if (fs.existsSync(smPath)) fs.rmSync(smPath);
-write('site.webmanifest', JSON.stringify({ name: NAME, short_name: 'Horizonte', description: `Autos y motos en ${L.city}, ${L.province}.`, lang: 'es-AR', start_url: './', scope: './', display: 'standalone', background_color: '#0a1012', theme_color: '#0a1012', icons: [{ src: 'images/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' }, { src: 'images/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }] }, null, 2) + '\n');
+write('site.webmanifest', JSON.stringify({ name: NAME, short_name: 'Lázaro', description: `Concesionario multimarca en ${L.city}, ${L.province}.`, lang: 'es-AR', start_url: './', scope: './', display: 'standalone', background_color: '#0a1012', theme_color: '#0a1012', icons: [{ src: 'images/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' }, { src: 'images/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }] }, null, 2) + '\n');
 write('favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#0a1012"/><path d="M9 44a23 23 0 0 1 46 0z" fill="#f2d21b"/><path d="M25 28v14M39 28v14M25 35h14" stroke="#0a1012" stroke-width="4.5" fill="none"/><path d="M6 50h52" stroke="#fff" stroke-width="4" fill="none"/></svg>\n');
 
 console.log(`Generado: index.html (${(index.length / 1024).toFixed(1)} KB), privacidad.html, reserva.html, 404.html · ${autos.length} unidades · modo ${demo ? 'demo (noindex)' : 'producción'}`);

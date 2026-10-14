@@ -63,7 +63,7 @@ const footer = (fuentes) => `<footer><div class="w"><p>© 2026 ${esc(NAME)}</p>$
 
 const ctaHead = WA ? { href: WA, t: 'WhatsApp' } : { href: FB, t: 'Facebook' };
 const header = (pre = '', skip = '#unidades') => `<a class="skip" href="${skip}">Saltar al contenido</a>
-<header><div class="w"><a class="mark" href="./" aria-label="${esc(NAME)}, inicio">Horizonte<small>Automotores</small></a>
+<header><div class="w"><a class="mark" href="./" aria-label="${esc(NAME)}, inicio">${esc(NAME.replace(/\s+Automotores.*$/i, ''))}<small>Automotores</small></a>
 <nav aria-label="Principal"><a href="${pre}#unidades">Unidades</a><a href="${pre}#financiacion">Financiación</a><a href="${pre}#nosotros">Nosotros</a><a href="${pre}#contacto">Contacto</a></nav>
 <div class="hc"><a class="btn p sm" href="${ctaHead.href}" ${EXT}>${ctaHead.t}</a></div></div></header>
 ${demo ? `<p class="demo"><span>${esc(LEYENDA)}</span></p>` : ''}`;
@@ -100,15 +100,15 @@ const ld = {
 };
 
 const index = page({
-  title: `${NAME} · Autos y motos en ${L.city}, ${L.province}`,
-  desc: `${NAME} en ${L.city}, ${L.province}: autos y motos con financiación. Visitanos en ${L.address} o mirá las unidades en Facebook e Instagram.`,
+  title: `${NAME} · Concesionario multimarca en ${L.city}, ${L.province}`,
+  desc: `${NAME} en ${L.city}, ${L.province}: concesionario multimarca. Visitanos en ${L.address} o mirá las unidades en Facebook e Instagram.`,
   file: 'index.html',
   extraHead: `<script type="application/ld+json">${JSON.stringify(ld)}</script>\n`,
   body: `${header()}
 <main id="top">
 <div class="hero"><div class="hx-copy">
 <p class="ey">${esc(L.city)} · ${esc(L.province)}</p>
-<h1><span class="sr">${esc(NAME)}: </span>Autos y motos <em>en ${esc(L.city)}</em></h1>
+<h1><span class="sr">${esc(NAME)}: </span>${esc(NAME)}: <em>en ${esc(L.city)}</em></h1>
 <p class="lead">Concesionario de ${esc(L.city)} del ${esc(GNAME)}. Usados multimarca, financiación y tu usado como parte de pago: mirá las unidades y visitanos en ${esc(L.address)}.</p>
 <div class="row"><a class="btn p" href="#unidades">Ver unidades</a><a class="btn" href="${L.mapsUrl}" ${EXT}>Cómo llegar</a></div></div>
 <div class="hx-card"><p class="k">Visitanos</p><p class="v">${esc(L.address)}<br>${esc(L.city)}, ${esc(L.province)}</p><a class="btn sm" href="${L.mapsUrl}" ${EXT}>Abrir en Google Maps</a></div>
@@ -122,7 +122,7 @@ ${unidades}
 
 <section id="financiacion" aria-labelledby="fin-t"><div class="w">
 <p class="ey">Financiación y servicios</p><h2 id="fin-t">Financiá tu <em>próximo vehículo</em></h2>
-<p class="sec-p">Ofrecemos financiación para autos y motos. Los montos y condiciones dependen de la unidad y de cada solicitante: consultanos por la que te interese.</p>
+<p class="sec-p">Ofrecemos financiación para vehículos. Los montos y condiciones dependen de la unidad y de cada solicitante: consultanos por la que te interese.</p>
 <div class="cards"><div class="card"><h3>Créditos Más Autos</h3><p>Figuramos en el listado de concesionarias adheridas a Créditos Más Autos del Banco de la Nación Argentina (listado del 16 de julio de 2025). <a href="${BNA}" ${EXT}>Ver el listado</a>.</p></div>${hasSvc('permuta') || hasSvc('tasacion') ? `<div class="card"><h3>Tu usado, parte de pago</h3><p>${[hasSvc('permuta') ? 'Recibimos vehículos usados como parte de pago.' : '', hasSvc('tasacion') ? 'La tasación es sin cargo.' : ''].filter(Boolean).join(' ')}</p></div>` : ''}${hasSvc('garantia') ? `<div class="card"><h3>Revisión técnica y garantía</h3><p>Los usados pasan por revisión técnica antes de publicarse y se entregan con garantía. Las condiciones dependen de cada vehículo.</p></div>` : ''}</div>
 <p class="src">Servicios según lo informado por ${esc(GNAME)} en <a href="${GWEB}" ${EXT}>su sitio</a>.</p>
 </div></section>
@@ -175,7 +175,7 @@ write('robots.txt', demo ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllo
 const smPath = path.join(root, 'sitemap.xml');
 if (!demo && siteUrl) write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}</loc></url>\n  <url><loc>${siteUrl}privacidad.html</loc></url>\n</urlset>\n`);
 else if (fs.existsSync(smPath)) fs.rmSync(smPath);
-write('site.webmanifest', JSON.stringify({ name: NAME, short_name: 'Horizonte', description: `Autos y motos en ${L.city}, ${L.province}.`, lang: 'es-AR', start_url: './', scope: './', display: 'standalone', background_color: '#0d0d0d', theme_color: '#0d0d0d', icons: [{ src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }] }, null, 2) + '\n');
+write('site.webmanifest', JSON.stringify({ name: NAME, short_name: 'Lázaro', description: `Concesionario multimarca en ${L.city}, ${L.province}.`, lang: 'es-AR', start_url: './', scope: './', display: 'standalone', background_color: '#0d0d0d', theme_color: '#0d0d0d', icons: [{ src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }] }, null, 2) + '\n');
 write('favicon.svg', '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f8f8f"/><stop offset=".5" stop-color="#f6f6f4"/><stop offset="1" stop-color="#9b9b9b"/></linearGradient></defs><rect width="64" height="64" rx="10" fill="#0d0d0d"/><path d="M18 14v30M46 14v30M18 29h28" stroke="url(#g)" stroke-width="7" fill="none"/><path d="M10 52h44" stroke="url(#g)" stroke-width="3" fill="none"/></svg>\n');
 
 console.log(`Generado: index.html (${(index.length / 1024).toFixed(1)} KB), privacidad.html, 404.html · ${autos.length} unidades · modo ${demo ? 'demo (noindex)' : 'producción'}`);
