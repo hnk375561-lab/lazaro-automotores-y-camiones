@@ -1,0 +1,449 @@
+================================================================================
+EXPEDIENTE MAESTRO FINAL
+LÁZARO AUTOMOTORES Y CAMIONES — GUALEGUAYCHÚ, ENTRE RÍOS, ARGENTINA
+================================================================================
+Fecha de elaboración / corte de consulta: 2026-10-14
+Naturaleza: investigación OSINT con fuentes públicas, herramientas de búsqueda web
+y apertura de URLs. Sin acceso a cuentas privadas ni a registros con trámite.
+
+ADVERTENCIA CENTRAL: este expediente NO declara la investigación "100 % completa".
+Declara un cierre operativo PARCIAL (sección 24). Donde algo no se pudo abrir,
+dice "no verificable por falta de acceso", no "inexistente".
+
+Convenciones de campo: "no visible en la fuente consultada" / "no verificable por
+falta de acceso" / "no consultado" / "contradictorio" / "no aplicable".
+Fechas AAAA-MM-DD. Los IDs: SRC fuente, QRY consulta, AFI afirmación, ADV anuncio,
+LIC línea Licuo, GAP vacío.
+
+--------------------------------------------------------------------------------
+3. ALCANCE REAL DE LA INVESTIGACIÓN
+--------------------------------------------------------------------------------
+Se ejecutaron 8 búsquedas web y 12 intentos de apertura de URL (detalle en sec. 19).
+De esos, 7 aperturas dieron contenido útil. Instagram y la ficha Licuo "O Km - Usados"
+bloquean el acceso automatizado (robots); la ficha Licuo 245366 devolvió HTTP 500;
+Autoyas solo entregó la cabecera. Facebook no se reintentó en esta fase (en la fase
+4.3/4.4 estaba bloqueado por robots). Google Maps, Wayback/CDX, Boletín Oficial de
+Entre Ríos, registro provincial de personas jurídicas, ARCA, municipalidad, prensa
+local por medio y los buscadores internos de Mercado Libre y otros portales NO se
+consultaron. Un solo motor de búsqueda.
+
+--------------------------------------------------------------------------------
+4. HERRAMIENTAS Y FUENTES EFECTIVAMENTE UTILIZADAS
+--------------------------------------------------------------------------------
+Herramientas: búsqueda web (modo estándar y extendido), apertura de URLs.
+Fuentes abiertas con contenido propio: SRC-04 a SRC-12 (ver sec. 16).
+Fuentes solo como extracto de buscador: Facebook, Instagram, Autoyas (posts),
+arempresas, SuperGuía, Moovit.
+
+--------------------------------------------------------------------------------
+5. INVENTARIO DE DOSSIERS PREVIOS
+--------------------------------------------------------------------------------
+LEÍDOS ÍNTEGRAMENTE:
+ - TXT_MADRE_OSINT_4_5_Lazaro_Inventario_Anuncios.txt (protocolo; contiene pistas, no hechos).
+ - INFORME_OSINT_4_3_4_4_EJECUCION_2026-10-14.txt (dentro del ZIP del sitio).
+ - Prompt maestro definitivo (este encargo).
+REVISADO PARCIALMENTE:
+ - ZIP del repo del sitio: listado completo y texto visible de index.html; se
+   modificaron index.html, privacidad.html, scripts/build.mjs y scripts/build-index.mjs.
+NO DISPONIBLES: los seis dossiers de enfoques especializados y las "capas anteriores"
+mencionadas en el prompt. No se afirma haberlos leído; sus resultados no se incorporan.
+Nota: el informe 4.3/4.4 cita capturas de Google Maps aportadas por el usuario
+(3,9 con 7 opiniones; reseñas "hace 7 años"). No las vi; se heredan como dato de
+tercera mano, no verificado por mí.
+
+--------------------------------------------------------------------------------
+6. RESUMEN EJECUTIVO
+--------------------------------------------------------------------------------
+1. Existe un comercio de Gualeguaychú llamado "Lazaro Automotores y Camiones"
+   (en Instagram/Facebook), también listado como "Lazaro Automotores" en
+   directorios, en Primera Junta 218, tel. fijo 03446 43-2700 y WhatsApp
+   011 15 6409-7886. Las tres vías de contacto aparecen en canales propios del
+   comercio (Facebook, Instagram, posts replicados en Autoyas).
+2. Anuncios individuales CONFIRMADOS de vehículos: 0. No se abrió ninguna URL de
+   anuncio individual. Hay 5 fragmentos de posts de 2026 vistos solo como extracto
+   (PROBABLE, SOLO_SNIPPET, históricos: el más reciente tiene 114 días a la fecha
+   de corte). No son stock actual.
+3. NUEVO: los extractos de Autoyas de 2026 muestran al propio comercio anunciando
+   "Aceptamos permutas de interés" y "Financiación bancaria a través de créditos
+   prendarios en cuotas fijas", con el sello "46 años". Es una afirmación del
+   comercio, vista solo en extracto.
+4. NUEVO: Licuo tiene DOS entradas: (a) "Lazaro Automotores", 03446 43-2700,
+   Primera Junta 218 (coincide con el comercio); (b) "Lazaro Automotores O Km -
+   Usados", (0)3446 493 065, "ruta nacional 14". La (b) NO puede vincularse con
+   el comercio con la evidencia actual (LIC-002). Ninguna otra fuente usa 493065.
+5. Horarios: tres versiones incompatibles entre fuentes (sec. 14). Sin resolver.
+6. Identidad legal (razón social, CUIT): no localizada. Las búsquedas dieron solo
+   homónimos descartados.
+7. No hay evidencia de sitio web propio: Zona Auto enlaza el campo "Sitio Web" a
+   la página de Facebook. No es prueba de inexistencia.
+
+--------------------------------------------------------------------------------
+7. PERFIL COMERCIAL DOCUMENTADO
+--------------------------------------------------------------------------------
+Nombre en canales propios: "Lazaro Automotores y Camiones" (Facebook, Instagram, Autoyas).
+Nombre en directorios: "Lazaro Automotores"; variantes históricas "Lazaro Automotores
+O Km - Usados" (arempresas, SuperGuía, Moovit, TodosNegocios, Licuo) y el error
+tipográfico "Lazaro Automores 0 Km - Usados" (TodosNegocios).
+Autodescripción (Facebook, extracto): "AUTOS, CAMIONES, PICK UPS y SUVS - 46 AÑOS de
+Trayectoria y Experiencia en el RUBRO", firmada por Lázaro González y Román González.
+Instagram (extracto): bio con "45 AÑOS", mismos nombres, "AUTOS - PICK UPs y SUVs -
+CAMIONES - CLÁSICOS", 4.488 seguidores, 399 publicaciones. Facebook: ~8,5 mil seguidores.
+Rubro según Guía Industrial: "0 KM - USADOS - MULTIMARCAS - VENTA DE CAMIONES USADOS".
+Los nombres de personas son autodescripción comercial en perfiles públicos; no se
+investigaron datos personales ni tributarios.
+
+--------------------------------------------------------------------------------
+8. CRONOLOGÍA VERIFICABLE (solo hechos con fecha visible)
+--------------------------------------------------------------------------------
+- ~2012 (aprox.): arempresas indexó la ficha "O Km - Usados" (dato de rastreo: edad
+  de indexación de 5228 días en el extracto; NO es fecha de fundación ni de publicación).
+- 2019 (aprox.): reseñas de Google "hace 7 años" (informe 4.3/4.4; captura del usuario,
+  no vista por mí; fecha relativa).
+- 2023-11 (aprox.): imagen de la ficha de Zona Auto subida en /uploads/2023/11/.
+- 2024-02-19: última modificación de la ficha de Zona Auto (metadato de la página).
+- 2024-06: posts de la página de Facebook replicados en Autoyas (informe 4.3/4.4;
+  "44 años" en ese momento). No re-verificado en esta fase.
+- 2026-04-29 a 2026-06-22: siete entradas con fecha en el extracto de Autoyas
+  (29/04, 06/05, 13/05, 03/06, 16/06, 18/06, 22/06). Fecha de publicación vs. captura:
+  indeterminada; se asume la fecha mostrada junto a cada post.
+- 2026-10-14: consulta.
+NO documentado: fundación, continuidad entre 2012 y 2019, ni entre 2019 y 2024.
+
+--------------------------------------------------------------------------------
+9. PRESENCIA DIGITAL ACTUAL E HISTÓRICA
+--------------------------------------------------------------------------------
+Facebook: https://www.facebook.com/lazaroautomotoresycamiones/ (extracto: dirección
+Av. Primera Junta 218, +54 11 6409-7886, correo lglazaroautomotores@hotmail.com,
+enlace a Instagram, "Not yet rated (3 Reviews)").
+Instagram: https://www.instagram.com/lazaro_automotores_y_camiones/ (extracto de bio).
+Autoyas: espejo de posts de Facebook, clave = ID 102634064981550 (la imagen og apunta
+a graph.facebook.com/102634064981550; consistente con la página pero no verificado
+que ese ID sea el de la página).
+Sitio propio: no hallado. Zona Auto remite "Sitio Web" a Facebook. Enlaces entrantes,
+redirecciones y versiones archivadas: no consultados (sin Wayback).
+Directorios (réplicas, ver sec. 18): Zona Auto, Guía Industrial, Licuo, Guía Urbana,
+TodosNegocios, arempresas, SuperGuía, Moovit, Cylex y Telexplorer (informe previo).
+
+--------------------------------------------------------------------------------
+10. INVENTARIO DE VEHÍCULOS Y ANUNCIOS COMPROBADOS
+--------------------------------------------------------------------------------
+INVENTARIO CONFIRMADO: ninguno. No se encontraron unidades que cumplan los criterios
+(URL individual + atribución confirmada) en las fuentes consultadas.
+INVENTARIO ACTUAL VERIFICADO: ninguno.
+HISTÓRICO — NO REPRESENTA STOCK ACTUAL. Candidatos PROBABLES, todos SOLO_SNIPPET,
+procedentes del extracto de la página de Autoyas. El vínculo entre cada fecha y su
+texto es el orden del extracto, que está truncado: certeza baja. Ninguna URL de post.
+
+ ADV-001  fecha del extracto 2026-04-29. VOLKSWAGEN VENTO, modelo 2016, versión
+          ADVANCE PLUS, 97.315 km, "services realizados". Precio: no visible.
+ ADV-002  fecha 2026-06-22. Diésel, motor 2.8, 177 HP, precio 43.500.000 (moneda no
+          visible). Marca/modelo/año/km: no visibles. No se infiere el modelo.
+ ADV-003  fecha 2026-05-13. Transmisión manual de 5 velocidades, diésel, motor 3.0,
+          163 HP, precio 29.900.000 (moneda no visible). Marca/modelo/año/km: no visibles.
+ ADV-004  fecha 2026-05-06. Precio 13.900.000 (moneda no visible). Unidad no visible.
+ ADV-005  fecha ambigua (2026-06-18 o 2026-06-22; extracto de la ronda anterior). Post
+          con varias unidades: FORD ECOSPORT 2012 XLS 1.6, 199.000 km, 11.000.000;
+          RENAULT KANGOO 2014 "Auth." (truncado); y un "9.000.000" de una unidad previa
+          no visible. No se sabe qué precio pertenece a qué unidad más allá de lo escrito.
+ Teaser sin fecha (extracto de Facebook): "TOYOTA HILUX — PRECIO + INFO". No se vincula
+ a ningún precio de los anteriores.
+
+Atribución de ADV-001..005: PROBABLE. A favor: nombre, dirección, teléfonos y sello
+"46 Años" del propio comercio en el mismo texto; ficha Autoyas enlazada al nombre.
+En contra/faltante: sin URL individual, sin acceso a la página, sin moneda, sin
+identificación completa de unidades. Duplicados: no hay evidencia de grupos DUP.
+Estado temporal: HISTÓRICO/SOLO_SNIPPET. No usar como stock ni como precios vigentes.
+
+--------------------------------------------------------------------------------
+11. ACTIVIDAD COMERCIAL Y SERVICIOS DOCUMENTADOS
+--------------------------------------------------------------------------------
+ - Venta de autos, pick-ups, SUVs, camiones y clásicos: autodescripción en Facebook e
+   Instagram (extractos). Es afirmación del comercio.
+ - Multimarca y 0 km y usados: Zona Auto (texto de plantilla) y Guía Industrial.
+   En los posts del extracto aparecen varias marcas (VW, Ford, Renault).
+ - "Venta de camiones usados": solo Guía Industrial (descripción de ficha). No hay
+   anuncio individual de camión. Un teaser de pick-up (Hilux) no es camión.
+ - NUEVO — Permuta y financiación: textos de los posts de 2026 (extracto Autoyas):
+   "Aceptamos Permutas De Interés (Pick Ups o SUVs)" y "Financiación Bancaria a través
+   de Créditos Prendarios en Cuotas Fijas". Procedencia: posts del propio comercio,
+   vistos solo como extracto de un espejo. Estado: PROBABLE-ALTO como práctica
+   anunciada en 2026; condiciones concretas (bancos, tasas, requisitos): no visibles.
+   No inferir garantía, gestoría ni consignación: no hay evidencia.
+ - Participación en eventos, entregas públicas, premios: no encontradas (no consultado
+   en profundidad).
+
+--------------------------------------------------------------------------------
+12. RESEÑAS Y MENCIONES DE TERCEROS
+--------------------------------------------------------------------------------
+ - Facebook (extracto): "Not yet rated (3 Reviews)".
+ - Google Maps 3,9 con 7 opiniones: dato del informe previo (captura del usuario); no
+   verificado por mí. No publicar sin confirmación.
+ - Guía Urbana: "Aún no hay opiniones"; Zona Auto: formulario de reseñas, sin reseñas
+   visibles; TodosNegocios: 0 "me gusta".
+ - Prensa local y menciones en sitios de terceros (aparte de directorios): no se
+   encontraron en las búsquedas ejecutadas. No es prueba de ausencia.
+
+--------------------------------------------------------------------------------
+13. REGISTROS COMERCIALES Y DOCUMENTACIÓN PÚBLICA
+--------------------------------------------------------------------------------
+Razón social, CUIT, fecha de constitución, titularidad: NO localizados. Las búsquedas
+nominales y por nombres de los titulares autodeclarados solo devolvieron homónimos
+(Kesselman Automotores SACIF, Gualeguaychú, CUIT 30-52018787-8; González Automóviles
+SA, Misiones; Automóviles González SRL, CABA; Lago Automotores, Jaro Automotores,
+Galindo Automotores SRL, Alejandro Lazzaro SRL, según el informe previo). DESCARTADOS:
+ninguno comparte nombre, teléfono ni dirección con el comercio. Ausencia de resultados
+NO significa que no tenga razón social. Canales pendientes: Boletín Oficial de Entre
+Ríos, registro provincial de personas jurídicas, habilitación municipal, constancia de
+inscripción aportada por el propio negocio.
+
+--------------------------------------------------------------------------------
+14. UBICACIONES, TELÉFONOS Y HORARIOS
+--------------------------------------------------------------------------------
+Dirección: Primera Junta 218 (Av. Primera Junta 218), Gualeguaychú. CP 2820 (Cylex,
+Telexplorer según informe previo; CPA E2820DNP). Fuentes con esta dirección: Facebook,
+Zona Auto, Guía Industrial, Licuo (245366), Guía Urbana, TodosNegocios, arempresas,
+SuperGuía, Moovit, Autoyas. Independencia entre ellas: baja (copias de directorios);
+la línea más sólida es la del propio comercio (Facebook + posts: "1era Junta 218").
+Teléfono fijo 03446 43-2700: en los mismos directorios y en los posts del comercio
+("AGENCIA: 3446 - 432700"). CONFIRMADO como contacto del comercio por canal propio.
+WhatsApp 011 15 6409-7886 (+54 11 6409-7886): Facebook (extracto), Instagram (bio:
+1164097886) y posts de 2026. Tres canales propios; antes figuraba PROBABLE-ALTO.
+Atención: el botón de WhatsApp de Guía Industrial (wa.me/543446432700) es un enlace
+generado a partir del fijo; NO prueba que el fijo tenga WhatsApp.
+Teléfono 03446 493065 / Ruta Nacional 14: ver sec. 14-bis (LIC).
+Horarios (contradictorios, sin resolver):
+ Zona Auto (abierta, modif. 2024-02-19): L-V 8:30-12:30 y 17:00-20:30; Sáb 8:00-12:30;
+   dom. cerrado.
+ Autoyas (datos estructurados, extracto 2026): L-V 8:30-12:30 y 16:30-20:00;
+   Sáb 9:00-13:00.
+ laguia.online (informe previo): L-V 8:00-12:30 y 16:30-20:30; Sáb 8:00-12:30.
+ Guía Industrial, Licuo, Guía Urbana, TodosNegocios: sin horario.
+Conclusión: ninguna fuente es del propio comercio. Confirmar con el negocio.
+
+14-bis. ANÁLISIS LICUO / RUTA NACIONAL 14 / 03446 493065
+ Fuente: https://gualeguaychu.licuo.com.ar/concesionarios_automotor-en_gualeguaychu.htm
+ y https://entre-rios.licuo.com.ar/concesionarios_automotor-en_entre_rios.htm
+ (abiertas el 2026-10-14; ambas sin fecha de contenido visible).
+
+ LIC-001  "Lazaro Automotores" | (03446) 43-2700 | primera junta 218, Gualeguaychu |
+          ficha 245366 (URL individual devolvió HTTP 500; no se abrió).
+          Vínculo con el comercio: PROBABLE-ALTO (nombre, dirección y teléfono coinciden
+          con los canales propios). Cautela: pertenece a una carga masiva de fichas
+          idénticas en formato (IDs 245330-245382, categorías repetidas) que incluye una
+          mueblería (Mueblería Vercelli) rotulada como concesionario; calidad de datos baja.
+ LIC-002  "Lazaro Automotores O Km - Usados" | (0)3446 493 065 | "ruta nacional 14",
+          Gualeguaychu | ficha 13021 alojada en subdominio palavecino.licuo.com.ar
+          (robots impide abrirla); en el listado provincial figura dentro del bloque
+          "Concesionarios automotor en Gualeguay" (otra localidad). Sin descripción,
+          sin dirección con número, sin fecha, sin publicador, sin enlaces.
+          Fecha del contenido: no visible. Fecha de consulta: 2026-10-14.
+          Evidencia a favor del vínculo: nombre casi idéntico al comercio y a la variante
+          "O Km - Usados" usada en otros directorios antiguos; misma localidad.
+          Evidencia en contra/faltante: teléfono y dirección distintos de todo lo demás;
+          493065 no aparece en ninguna otra fuente (QRY-003/004/005 sin resultado
+          relevante); ID bajo, de una carga anterior y distinta de LIC-001; ubicación
+          sin número ni km; mal ubicada geográficamente en el listado.
+          Hipótesis: A) mismo comercio con teléfono alterno; B) otra sede o punto de venta;
+          C) ubicación o teléfono anterior; D) ficha duplicada o importada; E) homónimo;
+          F) no demostrable. Ninguna se puede descartar, y ninguna está respaldada.
+          Certeza del vínculo: INDETERMINADO. Conclusión graduada: NO DEMOSTRADO.
+          Próximo paso: pedirle al comercio que confirme si alguna vez usó 03446 493065
+          o un domicilio sobre RN 14; consultar Wayback para ambas fichas Licuo; consultar
+          Licuo con otro método si el sitio lo permite sin eludir robots.
+
+--------------------------------------------------------------------------------
+15. MATRIZ DE AFIRMACIONES Y EVIDENCIAS (resumen)
+--------------------------------------------------------------------------------
+ ID     Afirmación                                         Estado                   Evidencia
+ AFI-01 Comercio en Primera Junta 218                       Confirmado (canal propio) FB, posts, directorios
+ AFI-02 Fijo 03446 43-2700                                  Confirmado (canal propio) posts + 8 directorios
+ AFI-03 WhatsApp 011 15 6409-7886                           Confirmado (canal propio) FB, IG, posts
+ AFI-04 "46 años" de trayectoria                            Autodeclaración; IG dice 45 Contradictorio
+ AFI-05 Titulares Lázaro y Román González                   Autodeclaración en bio     No publicar sin permiso
+ AFI-06 Vende autos, pick-ups, SUVs, camiones, clásicos     Autodeclaración           FB/IG
+ AFI-07 Venta de camiones usados (anuncios)                 No verificable            Solo ficha Guía Industrial
+ AFI-08 Permuta y créditos prendarios (2026)                Probable-alto             Extracto Autoyas
+ AFI-09 "Concesionario oficial"                             Refutado/no sustentado    Texto de plantilla Zona Auto
+ AFI-10 Rubro "alquiler de autos"                           Refutado/no sustentado    Clasificación de SuperGuía
+ AFI-11 Rubro "reparación de autos" (ISIC 4520)             Refutado/no sustentado    Clasificación automática TodosNegocios
+ AFI-12 Ficha Licuo O Km 493065 = el comercio               Indeterminado             Ver LIC-002
+ AFI-13 Horarios                                            Contradictorio            3 versiones
+ AFI-14 Sitio web propio inexistente                        No verificable            Solo "no hallado"
+ AFI-15 Razón social                                        No localizada             Búsqueda nominal limitada
+
+--------------------------------------------------------------------------------
+16. REGISTRO DE FUENTES (URL, estado, aporte)
+--------------------------------------------------------------------------------
+ SRC-01 https://www.facebook.com/lazaroautomotoresycamiones/ — extracto de buscador;
+        original, página del comercio; apertura directa no lograda. Aporta contacto,
+        autodescripción.
+ SRC-02 https://www.instagram.com/lazaro_automotores_y_camiones/ — extracto; robots
+        impide la apertura. Aporta bio, seguidores, WhatsApp.
+ SRC-03 https://www.autoyas.com/AR/Gualeguaych%C3%BA/102634064981550/Lazaro-Automotores-y-Camiones
+        — apertura directa solo cabecera; posts y datos estructurados vía extracto.
+        Réplica de Facebook. Hallazgo parcialmente nuevo (posts 2026).
+ SRC-04 https://zonaauto.com.ar/concesionarios/lazaro-automotores/ — abierta. Directorio;
+        modif. 2024-02-19. Texto de plantilla ("oficial").
+ SRC-05 https://guiaindustrial.com.ar/lazaro-automotores-gualeguaychu-entre-rios — abierta.
+        Sin horarios; rubro camiones usados; ficha sin verificar por el titular.
+ SRC-06 https://gualeguaychu.licuo.com.ar/concesionarios_automotor-en_gualeguaychu.htm —
+        abierta. Dos entradas (LIC-001, LIC-002). Hallazgo nuevo.
+ SRC-07 https://entre-rios.licuo.com.ar/concesionarios_automotor-en_entre_rios.htm —
+        abierta. LIC-002 bajo el bloque "Gualeguay". Hallazgo nuevo.
+ SRC-08 https://palavecino.licuo.com.ar/empresas/lazaro_automotores_o_km_usados-13021 —
+        robots impide la apertura.
+ SRC-09 https://gualeguaychu.licuo.com.ar/empresas/lazaro_automotores-245366 — HTTP 500.
+ SRC-10 https://ar.todosnegocios.com/lazaro-automores-km-usados-03446-43-2700 — abierta.
+        Nombre con error; "Car Repair and Maintenance"; lista "Lazaro Automotores" en la
+        misma dirección ("Concesionarios de los coches nuevos").
+ SRC-11 https://www.guiaurbana.com.ar/empresas/lazaro-automotores-gualeguaychu — abierta.
+        Primera Junta 218, 43-2700, sin opiniones.
+ SRC-12 https://www.guiaurbana.com.ar/empresas/markel-neumaticos-gualeguaychu —
+        IRRELEVANTE: es Markel Neumáticos (Pra Junta 428, 42-3880). Solo muestra la ficha
+        de Lázaro entre "empresas similares". Falso positivo como referencia.
+ SRC-13 https://www.arempresas.com/company/89602/LAZARO_AUTOMOTORES_O_KM_USADOS — extracto.
+ SRC-14 https://entre-rios.superguiaargentina.com.ar/empresas/Lazaro-Automotores-gualeguaychu-gualeguaychu-entre-rios-i144190.htm
+        — extracto. Rubro "Alquiler de Autos - Servicios / Consultoría" (error probable).
+ SRC-15 https://moovitapp.com/index/es-419/transporte_p%C3%BAblico-Lazaro_Automotores_o_Km_Usados-Gualeguaychu-site_230286658-6087
+        — extracto. Dirección; no es evidencia comercial.
+ SRC-16 https://indicadores.ar/empresa/30520187878 — HOMÓNIMO/IRRELEVANTE (Kesselman).
+ SRC-17 Cylex, Telexplorer, laguia.online, Mercado Libre listados genéricos — del informe
+        previo o resultados sin vendedor identificable; no contados.
+ No abiertas: https://www.google.com/maps/search/?api=1&query=Lazaro+Automotores+Primera+Junta+218+Gualeguaychu
+
+--------------------------------------------------------------------------------
+17. HALLAZGOS NUEVOS FRENTE A LAS INVESTIGACIONES ANTERIORES
+--------------------------------------------------------------------------------
+ 1. Dos entradas distintas en Licuo, una coherente con el comercio (LIC-001) y otra
+    discordante (LIC-002), con rasgos de carga antigua y mala geolocalización.
+ 2. Posts de 2026 (extracto Autoyas): permutas y créditos prendarios anunciados por el
+    comercio, y fragmentos de unidades con precio (ADV-001..005). El informe previo solo
+    consignaba posts de 2024.
+ 3. Tercera versión de horarios (Autoyas), con sábado 9:00-13:00.
+ 4. Guía Industrial no publica horarios; la fuente de horarios del sitio debe decir Zona
+    Auto, no Guía Industrial.
+ 5. "O Km - Usados" aparece en directorios antiguos asociado al fijo 43-2700 y a
+    Primera Junta 218: es una variante de nombre, no una segunda sede, en esos directorios.
+ 6. Discrepancia de "años de trayectoria" entre Instagram (45) y Facebook (46).
+ 7. Markel Neumáticos (URL del prompt) no tiene relación con el comercio.
+ 8. TodosNegocios clasifica el negocio como reparación; SuperGuía, como alquiler: errores
+    de directorio.
+
+--------------------------------------------------------------------------------
+18. CONTRADICCIONES, DUPLICADOS Y FALSOS POSITIVOS
+--------------------------------------------------------------------------------
+ Cadena de copia probable: Zona Auto, Guía Industrial, Guía Urbana, Licuo (LIC-001),
+ TodosNegocios, arempresas, SuperGuía, Moovit comparten dirección y teléfono. Cuentan
+ como UNA sola línea de evidencia sobre dirección/teléfono. La línea independiente es la
+ del comercio mismo (Facebook/Instagram/posts).
+ Contradicciones: horarios (3 versiones); años de trayectoria (45 vs 46); seguidores
+ (8,5 mil FB vs 4.488 IG; no contradictorio, solo distinto); rubros de directorio;
+ Licuo O Km (493065, RN 14) vs resto (43-2700, Primera Junta 218).
+ Falsos positivos descartados: Transporte Lazaro SA (Córdoba), noticias de Lázaro Báez,
+ Lázaro Cárdenas (México), Kesselman Automotores, González Automóviles (Misiones),
+ Markel Neumáticos, páginas de alquiler de autos de Expedia.
+
+--------------------------------------------------------------------------------
+19. CONSULTAS EJECUTADAS Y BÚSQUEDAS NEGATIVAS
+--------------------------------------------------------------------------------
+ Búsquedas web (todas con resultados reales):
+ QRY-001 "Lázaro Automotores y Camiones" Gualeguaychú — solo listados genéricos de
+         Mercado Libre y directorios; sin vendedor atribuible.
+ QRY-002 Lazaro Automotores y Camiones autoyas — Instagram, Facebook, Autoyas,
+         arempresas, SuperGuía, Moovit.
+ QRY-003 Licuo Lázaro Automotores Gualeguaychú Ruta Nacional 14 493065 — sin resultado
+         relevante.
+ QRY-004 "03446 493065" — ruido sin relación.
+ QRY-005 licuo.com.ar Gualeguaychú automotores Ruta Nacional 14 — sin resultado relevante.
+ QRY-006 Lázaro Automotores Gualeguaychú zonaauto concesionario usados — sin novedad.
+ QRY-007 "Lazaro Automotores" Gualeguaychú camión OR pick up OR camioneta usada precio 2026
+         — Facebook (extracto), Instagram (extracto), Autoyas con posts fechados 2026.
+ QRY-008 "Lázaro González" "Román González" automotores Gualeguaychú — solo homónimos.
+ Aperturas: Autoyas (solo cabecera); Zona Auto (OK); Guía Industrial (OK); Licuo GYU (OK);
+ Licuo ER (OK); TodosNegocios (OK); Guía Urbana Markel y Lázaro (OK); Licuo 13021
+ (robots); Licuo 245366 (HTTP 500); Instagram (robots).
+ Consultas del TXT madre NO ejecutadas: variantes de 432700 y de 493065 (formatos con
+ guion, +54, sin 0), "Primera Junta 218" con camionetas/camiones, combinaciones con
+ stock/permuta/financiación, site: de portales. Búsquedas por teléfono devolvieron
+ ruido; esto no prueba que no existan menciones.
+
+--------------------------------------------------------------------------------
+20. MATRIZ DE VACÍOS PENDIENTES
+--------------------------------------------------------------------------------
+ GAP-01 Anuncios individuales con URL (autos, camionetas, camiones). Clase: requiere
+        acceso a Facebook/Instagram o a un portal no consultado. Vía: pegar URLs/textos
+        de posts; consultar buscadores internos de portales desde navegador.
+ GAP-02 Vigencia de unidades y precios. Clase: requiere confirmación directa.
+ GAP-03 Línea Licuo LIC-002. Clase: requiere confirmación del comercio y/o Wayback.
+ GAP-04 Horarios reales. Clase: requiere confirmación directa.
+ GAP-05 Razón social/CUIT. Clase: registros públicos (Boletín Oficial ER, registro de
+        personas jurídicas, ARCA con dato del comercio).
+ GAP-06 Antigüedad/fundación. Clase: registros y hemeroteca; hoy solo autodeclaración.
+ GAP-07 Sitio web propio o dominios antiguos. Clase: archivos web (Wayback no disponible).
+ GAP-08 Condiciones de financiación/permuta. Clase: confirmación directa.
+ GAP-09 Reseñas Google (3,9/7) y Facebook. Clase: acceso a Google Maps no usado.
+ GAP-10 Prensa local y eventos. Clase: búsqueda adicional viable, no ejecutada.
+ Ninguno se marca "cerrado" por falta de resultados.
+
+--------------------------------------------------------------------------------
+21. INFORMACIÓN UTILIZABLE PARA EL SITIO WEB
+--------------------------------------------------------------------------------
+ A) PUBLICABLE CON RESPALDO (siempre con la leyenda de demo y "pendiente de confirmación"):
+    - Nombre: Lázaro Automotores (y "Lázaro Automotores y Camiones" en perfiles).
+    - Dirección Primera Junta 218, Gualeguaychú (CP 2820).
+    - Fijo 03446 43-2700. WhatsApp 011 15 6409-7886.
+    - Perfiles: Instagram y Facebook indicados.
+    - Rubros: autos, pick-ups, SUVs, camiones y clásicos, como "según sus perfiles".
+ B) HISTÓRICO (no presentar como actual): posts de 2024 y 2026, precios, unidades
+    ADV-001..005, "46 años".
+ C) PENDIENTE DE CONFIRMACIÓN: horarios, años de trayectoria, permutas y créditos
+    prendarios (con condiciones), correo, nombres de titulares, reseñas/calificaciones.
+ D) DESCARTADO: "concesionario oficial", alquiler de autos, reparación, teléfono
+    03446 493065 y RN 14 como dato del comercio, Markel Neumáticos, homónimos.
+
+--------------------------------------------------------------------------------
+22. INFORMACIÓN QUE NO DEBE PUBLICARSE SIN CONFIRMACIÓN
+--------------------------------------------------------------------------------
+ Horarios; "45/46 años"; correo lglazaroautomotores@hotmail.com; nombres Lázaro y Román
+ González; precios y unidades de los posts; condiciones de financiación o permuta;
+ calificaciones de Google; cualquier vínculo con 03446 493065 o RN 14; la etiqueta
+ "oficial"; "venta de camiones usados" como catálogo.
+
+--------------------------------------------------------------------------------
+23. LIMITACIONES DE ACCESO Y COBERTURA
+--------------------------------------------------------------------------------
+ Instagram y Licuo (ficha 13021) bloquean automatización; Facebook bloqueado en la fase
+ previa; Autoyas solo cabecera; Licuo 245366 con error 500. Sin Wayback, sin Google Maps,
+ sin registros oficiales, un solo buscador. Cobertura temporal: solo extractos de 2024 y
+ 2026; nada entre 2012 y 2024 salvo fichas de directorio. Los seis dossiers especializados
+ no estaban disponibles.
+
+--------------------------------------------------------------------------------
+24. CONCLUSIÓN DE CIERRE OPERATIVO
+--------------------------------------------------------------------------------
+ CERRADO OPERATIVAMENTE (con límites): identidad básica y datos de contacto en directorios
+ y canales propios (nombre, dirección, fijo, WhatsApp).
+ NO CERRADO: inventario (sin URLs de anuncios), línea Licuo, horarios, identidad legal,
+ antigüedad, reseñas, presencia histórica. Hay búsquedas viables y de valor sin ejecutar
+ (Wayback, buscadores internos de portales, Boletín Oficial ER, prensa local, Google Maps).
+ Por eso la investigación general NO puede declararse cerrada operativamente.
+ "Sin resultados en las herramientas usadas" no equivale a "no existe en internet".
+
+--------------------------------------------------------------------------------
+25. ACCIONES RESIDUALES (por valor y viabilidad)
+--------------------------------------------------------------------------------
+ 1. Que el comercio confirme: horarios, años de trayectoria, uso de 03446 493065 o de un
+    domicilio en RN 14, condiciones de financiación y permuta, razón social. (Alto valor,
+    alta viabilidad.)
+ 2. Pegar en esta conversación las URLs o textos de 3 a 5 posts recientes de Facebook e
+    Instagram para convertir ADV-001..005 en anuncios individuales verificables.
+ 3. Buscar el perfil del comercio en los buscadores internos de Mercado Libre y portales de
+    autos desde un navegador, con "Lázaro Automotores" y 03446 432700.
+ 4. Wayback/CDX de las fichas Licuo y de Autoyas.
+ 5. Boletín Oficial de Entre Ríos y registro provincial de personas jurídicas.
+ 6. Prensa local y hemeroteca de Gualeguaychú (antigüedad, eventos).
+ 7. Abrir la ficha de Google Maps (reseñas, horarios, fotos de fachada).
+
+================================================================================
+FIN DEL EXPEDIENTE
+================================================================================
