@@ -2,6 +2,10 @@
    Capa propia de Lázaro: marca tipográfica provisional (sin logotipo hasta recibir el original),
    hero sin fotografías (se agregan solo con material autorizado) y estado «catálogo en preparación». */
 
+/* Tipografías: las únicas declaradas con @font-face (y precargadas) son Bricolage Grotesque e Instrument Sans.
+   Las variables --h / --b del CSS heredado apuntaban a Cormorant Garamond e Inter, que no se cargan: caían a fuentes del sistema. */
+:root{--h:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;--b:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+
 /* Marca tipográfica provisional */
 .wm{display:inline-flex;flex-direction:column;gap:2px;line-height:1;color:#fff;text-transform:uppercase;letter-spacing:.14em}
 .wm b{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:22px;letter-spacing:.12em}

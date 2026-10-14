@@ -1,7 +1,7 @@
-Tipografías utilizadas por Horizonte Automotores. Ambas bajo SIL Open Font License 1.1.
+Tipografías utilizadas por Lázaro Automotores. Ambas bajo SIL Open Font License 1.1.
 
-Cormorant Garamond — © The Cormorant Project Authors.
-Inter — © The Inter Project Authors.
+Bricolage Grotesque — © The Bricolage Grotesque Project Authors.
+Instrument Sans — © The Instrument Sans Project Authors.
 
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
