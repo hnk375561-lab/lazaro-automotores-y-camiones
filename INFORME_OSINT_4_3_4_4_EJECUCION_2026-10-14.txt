@@ -1,0 +1,44 @@
+INFORME DE EJECUCIÓN — PROTOCOLOS OSINT 4.3 (hemerotecas/clasificados) Y 4.4 (identidad/registros)
+LÁZARO AUTOMOTORES Y CAMIONES — GUALEGUAYCHÚ, ENTRE RÍOS
+Fecha de consulta: 14 de octubre de 2026 | Herramientas: búsqueda web y apertura de URLs. Sin acceso a Wayback, Instagram, Facebook (robots), ni a registros que exigen trámite.
+
+1. BÚSQUEDAS EFECTIVAMENTE EJECUTADAS (literales)
+ a) "Lázaro Automotores" Gualeguaychú
+ b) "6409-7886" Lazaro Automotores Gualeguaychú  (sin resultados útiles)
+ c) "Lazaro Automotores" Gualeguaychú razón social CUIT SRL OR "S.A." OR "Lázaro González"
+ URLs abiertas: autoyas.com (solo cabecera accesible); facebook.com/lazaroautomotoresycamiones/ (bloqueado por robots: solo se usó el extracto del buscador).
+ NO ejecutadas: búsqueda por teléfono en todas sus variantes, prensa local por medio, Wayback/CDX, Boletín Oficial de Entre Ríos, registro de personas jurídicas de Entre Ríos, municipalidad de Gualeguaychú.
+
+2. HALLAZGOS (fuente / nivel)
+ H1. WhatsApp del negocio: "011 15-6409-7886" (formato wa.me: 5491164097886).
+     Fuente: publicaciones de junio de 2024 de la página de Facebook, replicadas en autoyas.com (…/102634064981550/Lazaro-Automotores-y-Camiones), con el texto "AGENCIA: 3446 - 432700 / WHATS APP: 011 15-6409-7886". El extracto de la página de Facebook muestra además "+54 11 6409-7886".
+     Nivel: E3/E4 (réplica de contenido propio del comercio, vía extracto). Vínculo: PROBABLE-ALTO (mismo texto muestra teléfono de la agencia y dirección). El fijo 03446 432700 sigue siendo el de las fichas.
+ H2. Código postal: 2820 (Cylex: "Primera Junta 218 2820 Gualeguaychú"); CPA E2820DNP (Telexplorer, "Av Pra Junta 218"). Autoyas: 2820. El sitio tenía E3269, sin respaldo. Corregido a E2820.
+ H3. Autodescripción en la página de Facebook (extracto): "AUTOS, CAMIONES, PICK UPS y SUVS - 46 AÑOS de Trayectoria y Experiencia en el RUBRO — Lázaro González y Román González". En junio de 2024 los posts decían "44 AÑOS" (consistente: +2). Es una afirmación del propio negocio, no un documento fechado de fundación. NO publicada en el sitio.
+ H4. Contacto en el extracto de Facebook: lglazaroautomotores@hotmail.com. NO publicado en el sitio.
+ H5. Facebook: ~8,5 mil seguidores y "Not yet rated (3 reviews)" en el extracto; ficha de Google Maps: 3,9 con 7 opiniones (capturas aportadas por el usuario). No publicados.
+ H6. Horarios: Zona Auto (datos estructurados): L-V 08:30-12:30 y 17:00-20:30, Sáb 08:00-12:30 (coincide con el sitio). laguia.online: L-V 08:00-12:30 y 16:30-20:30, Sáb 08:00-12:30 (DIFIERE). Contradicción sin resolver.
+ H7. Publicaciones de 2024 (autoyas): anuncios con precios, "Aceptamos permutas", "Créditos Prendarios en Cuotas Fijas". Referencia histórica; no usar como stock ni como condiciones vigentes.
+ H8. Zona Auto se autodefine "Concesionario oficial Multimarca": texto promocional del directorio; no usar "oficial".
+
+3. REGISTROS / IDENTIDAD LEGAL (4.4)
+ No se pudo establecer una vinculación legal verificable entre el nombre comercial investigado y una razón social específica con las fuentes efectivamente consultadas.
+ Alcance real: una búsqueda web nominal. Resultados de homónimos o similares, descartados: LAGO AUTOMOTORES (CABA), JARO AUTOMOTORES (CABA), GALINDO AUTOMOTORES S.R.L. (Tucumán), Alejandro Lazzaro S.R.L. (Santa Fe). Ninguno vinculado a Gualeguaychú ni a Primera Junta 218.
+ Esto no significa que el negocio no tenga razón social. Canales pendientes: Boletín Oficial de Entre Ríos, registro provincial de personas jurídicas, habilitación comercial municipal, constancia de inscripción en ARCA con datos que aporte el propio negocio.
+ Titulares: los nombres en la página de Facebook son autodescripción comercial; no se investigaron datos personales ni tributarios.
+
+4. ANTIGÜEDAD / CRONOLOGÍA (4.3)
+ Primer documento localizado: publicaciones de junio de 2024 (autoyas) y la ficha de Facebook de 2026, ambas autodeclaraciones. Con capturas de Google Maps (usuario): reseñas con "hace 7 años" (≈2019), fecha relativa. Directorio arempresas con ficha "O Km - Usados" de antigüedad de indexación declarada ~5228 días (≈2012): es dato de rastreo, no de publicación.
+ No se puede afirmar fundación ni continuidad. Intervalos no documentados: todos antes de 2019.
+
+5. LIMITACIONES
+ Facebook bloqueó la apertura directa. No se consultó Wayback. Un solo buscador. No se revisó prensa local ni hemerotecas.
+
+6. QUÉ PUBLICAR EN EL SITIO (tabla de reutilización)
+ WhatsApp 011 15 6409-7886 | evidencia: 2 renderizados del mismo origen (Facebook) | riesgo: bajo-medio | publicar con nota "pendiente de confirmación" (HECHO)
+ Código postal E2820 | Cylex + Telexplorer | bajo | publicar (HECHO)
+ "46 años de trayectoria" | autodeclaración Facebook | medio (cambia cada año) | verificar con el negocio antes de publicar
+ Correo hotmail | página Facebook | medio | verificar con el negocio
+ Nombres de titulares | página Facebook | privacidad | no publicar sin autorización
+ Reseñas / calificación | Google (capturas) | alto | dejar para después, como se decidió
+ Horarios | Zona Auto vs laguia.online | contradicción | verificar antes de ir a producción
