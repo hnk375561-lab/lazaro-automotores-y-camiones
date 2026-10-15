@@ -70,3 +70,19 @@
     if (window.innerWidth > 980) close();
   }, { passive: true });
 })();
+
+/* Cómo llegar: copiar la dirección (o compartirla en el celular) */
+(function () {
+  var b = document.querySelector('[data-copiar-dir]');
+  if (!b) return;
+  var st = document.querySelector('[data-copiar-st]');
+  var dir = 'Lázaro Automotores, Av. Primera Junta 218, Gualeguaychú, Entre Ríos';
+  function aviso(t) { if (st) { st.textContent = t; clearTimeout(aviso.t); aviso.t = setTimeout(function () { st.textContent = ''; }, 3500); } }
+  b.addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(dir).then(function () { aviso('Dirección copiada.'); }, function () { aviso(dir); });
+    } else if (navigator.share) {
+      navigator.share({ title: 'Lázaro Automotores', text: dir }).catch(function () {});
+    } else { aviso(dir); }
+  });
+})();

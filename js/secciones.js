@@ -693,7 +693,7 @@
 
       /* panel de marca bajo la foto: logotipo, qué ofrece la agencia y cómo visitarla (no repite lo de la derecha) */
       var pn = el('aside', null, 'fi-s'); pn.setAttribute('aria-label', 'Sobre ' + (ctx.nombre || 'la agencia'));
-      var plate = el('div', null, 'fi-lg'), lg = el('img'); lg.src = 'images/logo-sm.png'; lg.width = 360; lg.height = 144; lg.alt = ctx.nombre || ''; lg.decoding = 'async';
+      var plate = el('div', null, 'fi-lg'), lg = el('img'); lg.src = 'images/logo-lazaro.svg'; lg.width = 360; lg.height = 297; lg.alt = ctx.nombre || ''; lg.decoding = 'async';
       plate.appendChild(lg); pn.appendChild(plate);
       if (ctx.grupo) pn.appendChild(el('p', 'Concesionario del ' + ctx.grupo + (ctx.ciudad ? ' en ' + ctx.ciudad : ''), 'fi-s-t'));
       if (ctx.servicios && ctx.servicios.length) {

@@ -32,3 +32,153 @@ html body .hz-v71 .hz-brand .wm{color:#fff}
 
 /* Sin unidades cargadas no hay filtros ni comparador */
 #tools[hidden],.inventory-section .filter-bar:empty{display:none!important}
+
+/* =====================================================================
+   LOGOTIPO (vectorizado a partir del perfil de la agencia) + secciones rehechas
+   ===================================================================== */
+
+/* ---- Marca en el encabezado ---- */
+html body header .mark{gap:12px;align-items:center}
+html body header .mark .mark-logo{display:block;flex:none;aspect-ratio:1;width:52px;height:52px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(232,85,61,.75),0 6px 18px rgba(0,0,0,.35)}
+html body header.site-header--home .mark .mark-logo{width:56px;height:56px}
+@media(max-width:980px){html body header .mark .mark-logo,html body header.site-header--home .mark .mark-logo{width:44px;height:44px}}
+@media(max-width:380px){html body header .mark .wm i{display:none}}
+
+/* ---- Hero: placa con el logotipo ---- */
+.hero .hx-badge{position:relative;z-index:1;justify-self:center;align-self:center;width:min(100%,clamp(240px,31vw,420px));aspect-ratio:1;animation:lzBadgeIn .9s cubic-bezier(.2,.7,.2,1) .15s both}
+.hero .hx-badge img{position:relative;display:block;width:100%;height:100%;border-radius:50%;background:#fff;box-shadow:0 0 0 6px #0a1012,0 0 0 8px rgba(232,85,61,.85),0 30px 70px rgba(0,0,0,.55)}
+.hero .hx-badge-ring{position:absolute;inset:-26px;border-radius:50%;border:1px dashed rgba(232,85,61,.5);animation:lzSpin 60s linear infinite}
+@keyframes lzBadgeIn{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes lzSpin{to{transform:rotate(360deg)}}
+@media(max-width:900px){
+  .hero .hx-badge{position:absolute;bottom:auto;top:clamp(86px,13vw,112px);right:clamp(16px,4vw,32px);width:clamp(84px,17vw,120px);animation:none}
+  .hero .hx-badge-ring{display:none}
+}
+@media(max-width:560px){html body .hero h1{font-size:clamp(28px,8.6vw,40px);max-width:100%;overflow-wrap:normal;word-break:normal;hyphens:none}html body .hero .hx-copy{padding-top:clamp(48px,16vw,96px)}}
+@media(prefers-reduced-motion:reduce){.hero .hx-badge,.hero .hx-badge-ring{animation:none}}
+.hero-fx::after{content:none}
+
+/* ---- Horarios: logo en la placa ---- */
+html body .hz-v71 .hz-brand{background:#0a1012}
+html body .hz-v71 .hz-brand img{width:min(100%,210px);height:auto;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #0a1012,0 0 0 5px #e8553d}
+
+/* ---- Fotos de las unidades: sello de la agencia ---- */
+.car-ph{position:relative}
+.car-ph::after{content:"";position:absolute;right:10px;bottom:10px;width:46px;height:46px;border-radius:50%;background:#fff url(../images/logo-lazaro-badge.svg) center/cover no-repeat;box-shadow:0 0 0 2px rgba(10,16,18,.85),0 4px 12px rgba(0,0,0,.4);pointer-events:none}
+
+/* ---- Separador del catálogo y mapa: monograma ---- */
+.inventory-rule small::before{content:"";display:inline-block;vertical-align:middle;width:22px;height:17px;margin-right:10px;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.55}
+.hz-map-ic svg{display:none}
+.hz-map-ic{display:block;width:64px;height:64px;border-radius:50%;background:#fff url(../images/logo-lazaro-badge.svg) center/cover no-repeat;box-shadow:0 0 0 2px #e8553d}
+
+/* ---- Pin del mapa ---- */
+.hz-pin-b{display:block;position:relative;width:56px;height:56px;border-radius:50%;transform:none;background:#fff;border:3px solid #e8553d;box-shadow:0 8px 18px rgba(0,0,0,.4)}
+.hz-pin-b img{display:block;width:100%;height:100%;border-radius:50%}
+.hz-pin-b::after{content:"";position:absolute;left:50%;bottom:-13px;margin-left:-9px;border:9px solid transparent;border-top:13px solid #e8553d;border-bottom:0}
+.hz-pin-r{width:56px;height:56px}
+
+/* ---- Monograma de fondo en Visita, Contacto y pie ---- */
+#visita,#contacto{position:relative;overflow:hidden}
+#visita::before,#contacto::before{content:"";position:absolute;right:-3%;bottom:-6%;width:min(46vw,560px);aspect-ratio:13/10;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.045;pointer-events:none}
+#visita>*,#contacto>*{position:relative}
+footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(232,85,61,.8)}
+.err-logo{display:block;width:112px;height:112px;margin:0 0 22px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(232,85,61,.85)}
+
+/* ---- Ficha de unidad: placa del logo ---- */
+.fi-lg img{width:170px}
+
+/* =====================================================================
+   NOSOTROS
+   ===================================================================== */
+#nosotros{padding-block:clamp(56px,7vw,104px)}
+#nosotros .nz2{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(24px,4vw,64px);align-items:stretch}
+#nosotros .nz2-brand{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(24px,3vw,40px);background:#0a1012;color:#fff;overflow:hidden;border-top:5px solid #e8553d}
+#nosotros .nz2-brand::after{content:"";position:absolute;right:-18%;bottom:-14%;width:80%;aspect-ratio:13/10;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.06;pointer-events:none}
+#nosotros .nz2-logo{position:relative;z-index:1;display:block;width:min(100%,220px);height:auto;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #0a1012,0 0 0 7px #e8553d}
+#nosotros .nz2-num{position:relative;z-index:1;display:flex;align-items:flex-end;gap:16px;margin:0}
+#nosotros .nz2-num b{font:800 clamp(84px,10vw,132px)/.8 var(--h);letter-spacing:-.05em;color:#e8553d}
+#nosotros .nz2-num span{display:block;padding-bottom:6px;font:700 15px/1.25 var(--b);letter-spacing:.14em;text-transform:uppercase;color:#fff}
+#nosotros .nz2-num small{display:block;margin-top:6px;font:500 12px/1.3 var(--b);letter-spacing:.04em;text-transform:none;color:#9aa3a6}
+#nosotros .nz2-body h2{margin:0 0 16px}
+#nosotros .nz2-lead{max-width:36em;margin:0 0 22px;font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:#1c1f20}
+#nosotros .nz2-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+#nosotros .nz2-chips li{padding:8px 14px;border:2px solid #0a1012;font:800 12px/1 var(--b);letter-spacing:.12em;text-transform:uppercase;color:#0a1012;background:#fff}
+#nosotros .nz2-chips li:nth-child(-n+3){background:#0a1012;color:#fff}
+#nosotros .nz2-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0 0 28px;border-top:3px solid #0a1012}
+#nosotros .nz2-stats div{padding:16px 14px 4px 0;border-right:1px solid #d0d0d0;margin-right:14px}
+#nosotros .nz2-stats div:last-child{border:0;margin:0}
+#nosotros .nz2-stats dt{order:2;font:600 12px/1.3 var(--b);letter-spacing:.04em;color:#535657}
+#nosotros .nz2-stats dd{margin:0 0 4px;font:800 clamp(30px,3.4vw,46px)/1 var(--h);letter-spacing:-.03em;color:#0a1012}
+#nosotros .nz2-stats div{display:flex;flex-direction:column}
+#nosotros .nz2-cta{display:flex;flex-wrap:wrap;gap:10px}
+#nosotros .nz2-cta .btn{flex:0 1 auto;border-color:#0a1012;color:#0a1012;opacity:1}
+#nosotros .nz2-cta .btn.p{background:#e8553d;color:#0a1012}
+#nosotros .nz2-cta .btn:not(.p):hover{background:#0a1012;color:#fff}
+#nosotros .nz2-src{margin-top:clamp(22px,3vw,34px);font-size:13px;color:#535657}
+#nosotros .nz2-src summary{cursor:pointer;display:inline-block;font:700 12px/1.4 var(--b);letter-spacing:.1em;text-transform:uppercase;color:#0a1012;border-bottom:2px solid #e8553d}
+#nosotros .nz2-src p{margin:10px 0 0;max-width:60em;font-size:13px}
+#nosotros .nz2-src a{color:#0a1012}
+@media(max-width:900px){
+  #nosotros .nz2-logo{height:auto}
+  #nosotros .nz2{grid-template-columns:minmax(0,1fr)}
+  #nosotros .nz2-brand{flex-direction:row;align-items:center;gap:20px;padding:20px}
+  #nosotros .nz2-logo{width:104px;flex:none}
+  #nosotros .nz2-num b{font-size:76px}
+  #nosotros .nz2-num{flex-wrap:wrap;gap:8px}
+  #nosotros .nz2-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #nosotros .nz2-stats div:nth-child(2){border:0;margin:0}
+}
+
+/* =====================================================================
+   FORMAS DE PAGO (antes sección completa, ahora franja)
+   ===================================================================== */
+#pagos.pay{padding:0;background:#161819;border-block:1px solid #2d3031}
+#pagos .pay-in{display:flex;flex-wrap:wrap;align-items:center;gap:14px clamp(18px,3vw,40px);padding-block:22px 10px}
+#pagos .pay-k{margin:0;padding-right:clamp(14px,2vw,28px);border-right:2px solid #e8553d;font:800 12px/1.2 var(--b);letter-spacing:.22em;text-transform:uppercase;color:#e8553d}
+#pagos .pay-l{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0;padding:0;list-style:none;flex:1}
+#pagos .pay-l li{display:flex;flex-direction:column;gap:2px;color:#fff}
+#pagos .pay-l b{font:800 clamp(17px,1.7vw,21px)/1.1 var(--h);letter-spacing:.01em;text-transform:uppercase}
+#pagos .pay-l span{font:500 12.5px/1.3 var(--b);color:#9aa3a6}
+#pagos .pay-n{margin:0;padding-bottom:18px;font:500 12px/1.5 var(--b);color:#858788;max-width:70em}
+@media(max-width:700px){#pagos .pay-k{border:0;padding:0;width:100%}#pagos .pay-in .btn{width:100%}}
+
+/* =====================================================================
+   CÓMO LLEGAR
+   ===================================================================== */
+#llegar{padding-block:clamp(56px,7vw,104px)}
+#llegar .lg2{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(18px,2.4vw,32px);margin-top:10px}
+#llegar .lg2-main{position:relative;display:flex;flex-direction:column;gap:14px;padding:clamp(24px,3vw,40px);background:#0a1012;color:#fff;border-top:5px solid #e8553d;overflow:hidden}
+#llegar .lg2-main::after{content:"";position:absolute;right:-12%;bottom:-10%;width:78%;aspect-ratio:13/10;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.05;pointer-events:none}
+#llegar .lg2-main>*{position:relative;z-index:1}
+#llegar .lg2-logo{position:absolute!important;top:clamp(20px,2.6vw,32px);right:clamp(20px,2.6vw,32px);width:76px;height:76px;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #0a1012,0 0 0 5px #e8553d}
+#llegar .lg2-k{margin:0;font:800 12px/1.2 var(--b);letter-spacing:.22em;text-transform:uppercase;color:#e8553d}
+#llegar .lg2-a{margin:0;padding-right:92px;font:800 clamp(30px,3.6vw,48px)/1 var(--h);letter-spacing:-.02em;text-transform:uppercase;color:#fff}
+#llegar .lg2-a small{display:block;margin-top:10px;font:600 15px/1.3 var(--b);letter-spacing:.06em;text-transform:none;color:#c5c6c6}
+#llegar .lg2-live{display:flex;align-items:center;gap:12px;margin:6px 0 4px;padding:12px 14px;border-left:3px solid #e8553d;background:rgba(255,255,255,.05)}
+#llegar .lg2-live p{margin:0}
+#llegar .lg2-live-t{font:800 13px/1.2 var(--b);letter-spacing:.1em;text-transform:uppercase;color:#fff}
+#llegar .lg2-live-c{margin-top:2px;font:500 13px/1.3 var(--b);color:#c5c6c6}
+#llegar .lg2-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto;padding-top:10px}
+#llegar .lg2-btns .btn{width:100%;border-color:#fff;color:#fff;font-size:13px}
+#llegar .lg2-btns .btn.p{grid-column:1/-1;background:#e8553d;border-color:#e8553d;color:#0a1012}
+#llegar .lg2-btns .btn:not(.p):hover{background:#fff;color:#0a1012}
+#llegar .lg2-st{min-height:1.2em;margin:0;font:600 13px/1.3 var(--b);color:#ff7a5c}
+#llegar .lg2-side{display:grid;gap:14px;align-content:start}
+#llegar .lg2-c{position:relative;display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:20px 22px;background:#fff;border:1px solid #d0d0d0;border-left:5px solid #e8553d}
+#llegar .lg2-i{grid-row:1/span 3;display:grid;place-items:center;width:44px;height:44px;background:#0a1012}
+#llegar .lg2-i svg{width:24px;height:24px;fill:none;stroke:#e8553d;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#llegar .lg2-c h3{margin:0 0 4px;font:800 18px/1.1 var(--h);letter-spacing:.02em;text-transform:uppercase;color:#0a1012}
+#llegar .lg2-c p{margin:0;font-size:15px;line-height:1.5;color:#343738}
+#llegar .lg2-bus{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
+#llegar .lg2-bus li{min-width:44px;padding:6px 10px;text-align:center;border:2px solid #0a1012;font:800 14px/1 var(--b);letter-spacing:.06em;color:#0a1012}
+#llegar .lg2-bus li.is-1{background:#0a1012;color:#fff}
+#llegar .lg2-c--cp{background:#f1f1f1}
+@media(max-width:900px){
+  #llegar .lg2{grid-template-columns:minmax(0,1fr)}
+  #llegar .lg2-a{padding-right:84px}
+}
+@media(max-width:520px){#llegar .lg2-btns{grid-template-columns:1fr}#llegar .lg2-logo{width:60px;height:60px}#llegar .lg2-a{padding-right:70px}}
+#llegar .lg2-btns a:last-child{grid-column:1/-1}
+#llegar .lg2-side{align-content:stretch;grid-auto-rows:1fr}
+#llegar .lg2-c{align-content:center}
+@media(max-width:900px){#llegar .lg2-side{grid-auto-rows:auto}}
