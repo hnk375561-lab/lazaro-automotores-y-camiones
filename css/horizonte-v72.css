@@ -12,16 +12,18 @@ html body .hz-v71 .hz-a{max-width:none;font-size:clamp(18px,1.7vw,22px);line-hei
 html body .hz-v71 .hz-addr .row{display:flex;flex-wrap:wrap;gap:8px;margin:0}
 html body .hz-v71 .hz-addr .btn{flex:1 1 auto}
 
-/* 2 · Hero: entrada + zoom lento en un solo sentido (sin transiciones que vayan y vuelvan) */
-@keyframes hzKen{from{transform:scale(1.12)}to{transform:scale(1.05)}}
+/* 2 · Hero: carrusel de fondo · cambia cada 2 s con disolvencia limpia y zoom lento continuo */
+@keyframes hzKen{from{transform:scale(1)}to{transform:scale(1.11)}}
 @keyframes hzMediaIn{from{opacity:0}to{opacity:1}}
-.hero-slide img{transform:scale(1.05);transition:none!important;filter:none!important}
-.hero-media{animation:hzMediaIn 1.2s ease-out both}
 .hero{background-position:center center!important}
-.hero-slide.is-active img,.hero-slide.is-leaving img{animation:hzKen 4.5s cubic-bezier(.22,.61,.36,1) both}
-.hero-slide.is-leaving img{animation-play-state:paused}
-@media(prefers-reduced-motion:reduce){.hero-slide.is-active img,.hero-slide.is-leaving img{animation:none}}
-
+.hero-media{animation:hzMediaIn 1.2s ease-out both}
+.hero-slide{position:absolute;inset:0;z-index:0;margin:0;width:100%;height:100%;overflow:hidden;opacity:0;visibility:hidden;transition:none;contain:paint}
+.hero-slide.is-leaving{z-index:1;opacity:1;visibility:visible}
+.hero-slide.is-active{z-index:2;opacity:1;visibility:visible;transition:opacity .7s ease,visibility 0s}
+.hero-slide img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:none!important;image-rendering:auto;transform:scale(1);transform-origin:50% 50%;transition:none!important;backface-visibility:hidden;will-change:transform}
+.hero-slide.is-active img,.hero-slide.is-leaving img{animation:hzKen 3s cubic-bezier(.3,.1,.4,1) both}
+@media(max-width:900px){.hero::before{background:linear-gradient(180deg,rgba(10,16,18,.5) 0%,rgba(10,16,18,.66) 45%,rgba(10,16,18,.78) 100%)!important}}
+@media(prefers-reduced-motion:reduce){.hero-media{animation:none}.hero-slide.is-active{transition:none}.hero-slide.is-active img,.hero-slide.is-leaving img{animation:none}}
 
 /* 3 · Nosotros: isotipo */
 .nz-big .nz-iso{position:absolute;top:clamp(20px,3vw,36px);right:clamp(20px,3vw,36px);width:clamp(104px,11vw,150px);height:auto;overflow:visible}
