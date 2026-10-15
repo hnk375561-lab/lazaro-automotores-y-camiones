@@ -1,0 +1,25 @@
+# Archivos a ELIMINAR del repo (ya no se usan; eran hojas CSS vacías sin ninguna referencia)
+# Ejecutar desde la raíz del repo:
+
+rm -f css/comparador.css
+rm -f css/donde.css
+rm -f css/header-tint.css
+rm -f css/horarios.css
+rm -f css/horizonte-perf.css
+rm -f css/horizonte-perf2.css
+rm -f css/horizonte-v54.css
+rm -f css/horizonte-v55.css
+rm -f css/horizonte-v56.css
+rm -f css/horizonte-v57.css
+rm -f css/horizonte-v58.css
+rm -f css/horizonte-v59.css
+rm -f css/horizonte-v60.css
+rm -f css/horizonte-v61.css
+rm -f css/horizonte-v62.css
+rm -f css/horizonte-v63.css
+rm -f css/horizonte-v66.css
+rm -f css/horizonte-v67.css
+rm -f css/quieto.css
+rm -f css/resenas-compra.css
+rm -f css/secciones.css
+rm -f css/site.css

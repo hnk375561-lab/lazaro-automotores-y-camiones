@@ -104,3 +104,10 @@ main:has(.err-logo)::after{content:"";position:absolute;right:4vw;bottom:6vh;wid
 /* Cinta roja de cierre en páginas sin pie (404, privacidad) */
 body:not(:has(footer))::after{content:"";display:block;height:8px;
   background:linear-gradient(90deg,var(--lz-red) 0,var(--lz-red) clamp(220px,38vw,560px),rgba(245,22,15,.28) clamp(220px,38vw,560px),rgba(245,22,15,.28) 100%)}
+
+/* Las fotos de las unidades ya traen el logo de la agencia: no se duplica el sello */
+.car-ph::after{content:none!important}
+
+/* Texto chico sobre fondos rojos: tinta pura y más peso */
+.hz-chn--p .hz-chn-s,.hz-chn--p .hz-chn-k{color:#0a1012;opacity:1;font-weight:600}
+.hz-chn--p .hz-chn-s{font-size:13px}
