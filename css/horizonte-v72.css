@@ -99,3 +99,12 @@ html body .hz-v71 .hz-addr .btn{flex:1 1 auto}
 @media(min-width:981px) and (max-width:1199px){
   html body header.site-header--home .hc{display:none}
 }
+
+/* 5 · Fondos de sección: frente de un vehículo de la agencia en cada bloque (sin repetir entre sí ni con el hero) */
+#busqueda,#guia,#visita,#contacto,footer{position:relative;isolation:isolate}
+#busqueda::after,#guia::after,#visita::after,#contacto::after,footer::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:cover;background-position:center}
+#busqueda::after{background-image:linear-gradient(180deg,#0a1012 0,rgba(10,16,18,0) 10%,rgba(10,16,18,0) 90%,#0a1012 100%),linear-gradient(rgba(10,16,18,.22),rgba(10,16,18,.22)),url(../images/fondos/busqueda.webp);background-position:center,center,50% 45%}
+#guia::after{background-image:linear-gradient(180deg,#0a1012 0,rgba(10,16,18,.66) 14%,rgba(10,16,18,.56) 50%,rgba(10,16,18,.74) 88%,#0a1012 100%),url(../images/fondos/guia.webp);background-position:center,50% 40%}
+#visita::after{background-image:linear-gradient(180deg,#0a1012 0,rgba(10,16,18,.46) 14%,rgba(10,16,18,.5) 86%,#0a1012 100%),linear-gradient(90deg,rgba(10,16,18,.68),rgba(10,16,18,.3) 60%,rgba(10,16,18,.45)),url(../images/fondos/visita.webp);background-position:center,center,50% 55%}
+#contacto::after{background-image:linear-gradient(180deg,#0a1012 0,rgba(10,16,18,.52) 14%,rgba(10,16,18,.58) 86%,#0a1012 100%),linear-gradient(90deg,rgba(10,16,18,.66),rgba(10,16,18,.34) 70%,rgba(10,16,18,.5)),url(../images/fondos/contacto.webp);background-position:center,center,50% 45%}
+footer::after{background-image:linear-gradient(180deg,rgba(10,16,18,.86),rgba(10,16,18,.8)),url(../images/fondos/footer.webp);background-position:center,50% 60%}
