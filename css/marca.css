@@ -1,0 +1,106 @@
+/* Lázaro Automotores · css/marca.css
+   Capa de identidad de marca, cargada al final de todo.
+   Fuente de verdad del color: el rojo del logotipo (#f2130d). En la interfaz se usa #f5160f,
+   idéntico a simple vista pero con contraste AA (4.5:1) contra la tinta #0a1012.
+   Paleta: rojo Lázaro · tinta #0a1012 · blanco. Nada de azules ni corales. */
+
+:root{
+  --lz-red:#f5160f;          /* rojo Lázaro (UI) */
+  --lz-red-logo:#f2130d;     /* rojo exacto del logotipo */
+  --lz-red-hi:#ff4a3d;       /* hover / textos pequeños sobre oscuro */
+  --lz-red-deep:#7a0a06;     /* rojo profundo */
+  --lz-ink:#0a1012;
+  --lz-cut:polygon(0 0,100% 0,calc(100% - 22px) 100%,0 100%); /* corte en diagonal del logotipo */
+}
+
+/* ---------- Detalles de punta a punta ---------- */
+html{accent-color:var(--lz-red-logo);scrollbar-color:var(--lz-red) #0a1012}
+::selection{background:var(--lz-red);color:#fff}
+::-moz-selection{background:var(--lz-red);color:#fff}
+:focus-visible{outline-color:var(--lz-red-hi)}
+section.lt:not(.ct) :focus-visible{outline-color:var(--lz-red)}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:#0a1012}
+::-webkit-scrollbar-thumb{background:var(--lz-red);border:3px solid #0a1012;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:var(--lz-red-hi)}
+input,select,textarea{caret-color:var(--lz-red)}
+progress,meter{accent-color:var(--lz-red)}
+
+/* Encabezado: filo rojo grueso, como la franja del logotipo */
+header{border-bottom:2px solid var(--lz-red)}
+/* Botones principales: corte diagonal del logo en toda la web */
+.btn.p{clip-path:var(--lz-cut)}
+
+/* Tono de marca sobre las fotos de fondo de cada bloque (velo rojo muy suave) */
+#busqueda::after,#guia::after,#visita::after,#contacto::after{box-shadow:inset 0 0 0 9999px rgba(245,22,15,.07)}
+
+/* Cinta roja con corte entre bloques grandes (misma geometría que el logotipo) */
+#nosotros::after,#unidades::after,#preguntas::after,#llegar::after{content:"";position:absolute;left:0;top:0;width:clamp(120px,22vw,320px);height:6px;background:var(--lz-red);clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);z-index:2;pointer-events:none}
+
+/* ======================================================================
+   PIE DE PÁGINA
+   ====================================================================== */
+footer{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:var(--lz-ink);color:#d9dfe0;
+  padding:clamp(56px,6vw,88px) 0 calc(44px + env(safe-area-inset-bottom,0px));
+  border-top:0;box-shadow:none;
+}
+/* foto del showroom (pilares y autos rojos) con velo de tinta y un toque de rojo de marca */
+footer::after{
+  background-image:
+    linear-gradient(180deg,rgba(10,16,18,.80) 0,rgba(10,16,18,.38) 30%,rgba(10,16,18,.50) 62%,rgba(10,16,18,.92) 100%),
+    linear-gradient(100deg,rgba(10,16,18,.82) 0,rgba(10,16,18,.30) 52%,rgba(122,10,6,.30) 100%),
+    url(../images/fondos/footer.webp);
+  background-position:center,center,50% 0%;
+  background-size:cover;
+}
+/* cinta roja superior con corte */
+footer::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:8px;z-index:3;pointer-events:none;
+  background:linear-gradient(90deg,var(--lz-red) 0,var(--lz-red) clamp(220px,38vw,560px),rgba(245,22,15,.28) clamp(220px,38vw,560px),rgba(245,22,15,.28) 100%);
+  clip-path:none;
+}
+footer .w{position:relative}
+/* monograma LA gigante de fondo */
+footer .w::after{
+  content:"";position:absolute;right:var(--hz-gutter,24px);bottom:-8px;width:min(34vw,420px);aspect-ratio:13/10;
+  background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.08;pointer-events:none;z-index:-1;
+}
+
+footer .ft{grid-template-columns:1.5fr 1fr 1fr;gap:clamp(24px,4vw,64px);border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:clamp(24px,3vw,36px)}
+footer .ft-logo{width:clamp(96px,9vw,128px);height:auto;aspect-ratio:1;margin:0 0 18px;
+  box-shadow:0 0 0 4px var(--lz-ink),0 0 0 6px var(--lz-red),0 18px 40px rgba(0,0,0,.5)}
+footer .ft-b{
+  position:relative;margin:0 0 12px;padding-bottom:14px;
+  font:800 clamp(28px,3.2vw,44px)/.95 var(--h);letter-spacing:.01em;text-transform:uppercase;color:#fff;
+}
+footer .ft-b::after{content:"";position:absolute;left:0;bottom:0;width:112px;height:6px;background:var(--lz-red);clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+footer .ft-m p:not(.ft-b){color:#e4e9ea}
+footer .ft-k{color:var(--lz-red-hi);letter-spacing:.26em;margin-bottom:12px}
+footer a{color:#fff;text-decoration-color:var(--lz-red);text-decoration-thickness:2px;text-underline-offset:4px;transition:color .2s ease,text-decoration-color .2s ease}
+footer a:hover,footer a:focus-visible{color:var(--lz-red-hi);text-decoration-color:var(--lz-red-hi)}
+footer .ft-c{margin-top:6px;font-weight:700;color:#fff;letter-spacing:.02em}
+footer .demo-note,footer p{color:#cfd6d8}
+footer .demo-note{max-width:78ch;line-height:1.55}
+
+@media(max-width:900px){footer .ft{grid-template-columns:1fr 1fr}footer .ft-m{grid-column:1/-1}}
+@media(max-width:560px){footer .ft{grid-template-columns:1fr}footer .w::after{width:62vw;opacity:.06}}
+
+/* ======================================================================
+   404 y Privacidad: misma marca
+   ====================================================================== */
+.err-logo{box-shadow:0 0 0 4px var(--lz-ink),0 0 0 6px var(--lz-red),0 18px 40px rgba(0,0,0,.45)}
+
+/* 404: foto del showroom con velo de tinta y monograma */
+main:has(.err-logo){position:relative;isolation:isolate;min-height:calc(100vh - 80px)}
+main:has(.err-logo)::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,16,18,.86),rgba(10,16,18,.55) 55%,rgba(10,16,18,.92)),
+             linear-gradient(100deg,rgba(10,16,18,.85),rgba(122,10,6,.30)),
+             url(../images/fondos/footer.webp) 50% 0/cover no-repeat}
+main:has(.err-logo)::after{content:"";position:absolute;right:4vw;bottom:6vh;width:min(38vw,460px);aspect-ratio:13/10;z-index:-1;pointer-events:none;
+  background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.09}
+
+/* Cinta roja de cierre en páginas sin pie (404, privacidad) */
+body:not(:has(footer))::after{content:"";display:block;height:8px;
+  background:linear-gradient(90deg,var(--lz-red) 0,var(--lz-red) clamp(220px,38vw,560px),rgba(245,22,15,.28) clamp(220px,38vw,560px),rgba(245,22,15,.28) 100%)}

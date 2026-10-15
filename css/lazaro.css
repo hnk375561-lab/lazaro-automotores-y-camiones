@@ -9,21 +9,21 @@
 /* Marca tipográfica provisional */
 .wm{display:inline-flex;flex-direction:column;gap:2px;line-height:1;color:#fff;text-transform:uppercase;letter-spacing:.14em}
 .wm b{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:22px;letter-spacing:.12em}
-.wm i{font-style:normal;font-family:"Instrument Sans",system-ui,sans-serif;font-weight:600;font-size:9px;letter-spacing:.42em;color:var(--acc,#e8553d)}
+.wm i{font-style:normal;font-family:"Instrument Sans",system-ui,sans-serif;font-weight:600;font-size:9px;letter-spacing:.42em;color:var(--acc,#f5160f)}
 .mark .wm{padding:2px 0}
 .wm--lg b{font-size:clamp(28px,4vw,40px)}
 .wm--lg i{font-size:clamp(10px,1.2vw,13px)}
 .wm--ft{margin:0 0 14px}
 .wm--ft b{font-size:26px}
-html body .hz-v71 .hz-brand{background:#0a1012;border-color:rgba(232,85,61,.6);border-bottom-color:#e8553d}
+html body .hz-v71 .hz-brand{background:#0a1012;border-color:rgba(245,22,15,.6);border-bottom-color:#f5160f}
 html body .hz-v71 .hz-brand .wm{color:#fff}
 @media (max-width:700px){.wm b{font-size:19px}}
 
 /* Hero sin fotografías: escena 100 % CSS */
 .hero-media{background:#0a1012}
 .hero-fx{position:absolute;inset:0;display:block;background:
-  radial-gradient(70% 60% at 82% 18%,rgba(232,85,61,.20),transparent 60%),
-  radial-gradient(60% 50% at 12% 92%,rgba(232,85,61,.10),transparent 62%),
+  radial-gradient(70% 60% at 82% 18%,rgba(245,22,15,.20),transparent 60%),
+  radial-gradient(60% 50% at 12% 92%,rgba(245,22,15,.10),transparent 62%),
   linear-gradient(160deg,#10181a 0%,#0a1012 55%,#070b0c 100%)}
 .hero-fx::after{content:"LÁZARO / AUTOMOTORES";position:absolute;right:clamp(20px,4vw,64px);bottom:clamp(20px,4vw,48px);font:700 11px/1 var(--b,system-ui,sans-serif);letter-spacing:.5em;color:rgba(255,255,255,.28)}
 
@@ -39,15 +39,15 @@ html body .hz-v71 .hz-brand .wm{color:#fff}
 
 /* ---- Marca en el encabezado ---- */
 html body header .mark{gap:12px;align-items:center}
-html body header .mark .mark-logo{display:block;flex:none;aspect-ratio:1;width:52px;height:52px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(232,85,61,.75),0 6px 18px rgba(0,0,0,.35)}
+html body header .mark .mark-logo{display:block;flex:none;aspect-ratio:1;width:52px;height:52px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(245,22,15,.75),0 6px 18px rgba(0,0,0,.35)}
 html body header.site-header--home .mark .mark-logo{width:56px;height:56px}
 @media(max-width:980px){html body header .mark .mark-logo,html body header.site-header--home .mark .mark-logo{width:44px;height:44px}}
 @media(max-width:380px){html body header .mark .wm i{display:none}}
 
 /* ---- Hero: placa con el logotipo ---- */
 .hero .hx-badge{position:relative;z-index:1;justify-self:center;align-self:center;width:min(100%,clamp(240px,31vw,420px));aspect-ratio:1;animation:lzBadgeIn .9s cubic-bezier(.2,.7,.2,1) .15s both}
-.hero .hx-badge img{position:relative;display:block;width:100%;height:100%;border-radius:50%;background:#fff;box-shadow:0 0 0 6px #0a1012,0 0 0 8px rgba(232,85,61,.85),0 30px 70px rgba(0,0,0,.55)}
-.hero .hx-badge-ring{position:absolute;inset:-26px;border-radius:50%;border:1px dashed rgba(232,85,61,.5);animation:lzSpin 60s linear infinite}
+.hero .hx-badge img{position:relative;display:block;width:100%;height:100%;border-radius:50%;background:#fff;box-shadow:0 0 0 6px #0a1012,0 0 0 8px rgba(245,22,15,.85),0 30px 70px rgba(0,0,0,.55)}
+.hero .hx-badge-ring{position:absolute;inset:-26px;border-radius:50%;border:1px dashed rgba(245,22,15,.5);animation:lzSpin 60s linear infinite}
 @keyframes lzBadgeIn{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}
 @keyframes lzSpin{to{transform:rotate(360deg)}}
 @media(max-width:900px){
@@ -60,7 +60,7 @@ html body header.site-header--home .mark .mark-logo{width:56px;height:56px}
 
 /* ---- Horarios: logo en la placa ---- */
 html body .hz-v71 .hz-brand{background:#0a1012}
-html body .hz-v71 .hz-brand img{width:min(100%,210px);height:auto;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #0a1012,0 0 0 5px #e8553d}
+html body .hz-v71 .hz-brand img{width:min(100%,210px);height:auto;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #0a1012,0 0 0 5px #f5160f}
 
 /* ---- Fotos de las unidades: sello de la agencia ---- */
 .car-ph{position:relative}
@@ -69,20 +69,20 @@ html body .hz-v71 .hz-brand img{width:min(100%,210px);height:auto;aspect-ratio:1
 /* ---- Separador del catálogo y mapa: monograma ---- */
 .inventory-rule small::before{content:"";display:inline-block;vertical-align:middle;width:22px;height:17px;margin-right:10px;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.55}
 .hz-map-ic svg{display:none}
-.hz-map-ic{display:block;width:64px;height:64px;border-radius:50%;background:#fff url(../images/logo-lazaro-badge.svg) center/cover no-repeat;box-shadow:0 0 0 2px #e8553d}
+.hz-map-ic{display:block;width:64px;height:64px;border-radius:50%;background:#fff url(../images/logo-lazaro-badge.svg) center/cover no-repeat;box-shadow:0 0 0 2px #f5160f}
 
 /* ---- Pin del mapa ---- */
-.hz-pin-b{display:block;position:relative;width:56px;height:56px;border-radius:50%;transform:none;background:#fff;border:3px solid #e8553d;box-shadow:0 8px 18px rgba(0,0,0,.4)}
+.hz-pin-b{display:block;position:relative;width:56px;height:56px;border-radius:50%;transform:none;background:#fff;border:3px solid #f5160f;box-shadow:0 8px 18px rgba(0,0,0,.4)}
 .hz-pin-b img{display:block;width:100%;height:100%;border-radius:50%}
-.hz-pin-b::after{content:"";position:absolute;left:50%;bottom:-13px;margin-left:-9px;border:9px solid transparent;border-top:13px solid #e8553d;border-bottom:0}
+.hz-pin-b::after{content:"";position:absolute;left:50%;bottom:-13px;margin-left:-9px;border:9px solid transparent;border-top:13px solid #f5160f;border-bottom:0}
 .hz-pin-r{width:56px;height:56px}
 
 /* ---- Monograma de fondo en Visita, Contacto y pie ---- */
 #visita,#contacto{position:relative;overflow:hidden}
 #visita::before,#contacto::before{content:"";position:absolute;right:-3%;bottom:-6%;width:min(46vw,560px);aspect-ratio:13/10;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.045;pointer-events:none}
 #visita>*,#contacto>*{position:relative}
-footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(232,85,61,.8)}
-.err-logo{display:block;width:112px;height:112px;margin:0 0 22px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(232,85,61,.85)}
+footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px rgba(245,22,15,.8)}
+.err-logo{display:block;width:112px;height:112px;margin:0 0 22px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px rgba(245,22,15,.85)}
 
 /* ---- Ficha de unidad: placa del logo ---- */
 .fi-lg img{width:170px}
@@ -92,11 +92,11 @@ footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radi
    ===================================================================== */
 #nosotros{padding-block:clamp(56px,7vw,104px)}
 #nosotros .nz2{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(24px,4vw,64px);align-items:stretch}
-#nosotros .nz2-brand{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(24px,3vw,40px);background:#0a1012;color:#fff;overflow:hidden;border-top:5px solid #e8553d}
+#nosotros .nz2-brand{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(24px,3vw,40px);background:#0a1012;color:#fff;overflow:hidden;border-top:5px solid #f5160f}
 #nosotros .nz2-brand::after{content:"";position:absolute;right:-18%;bottom:-14%;width:80%;aspect-ratio:13/10;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.06;pointer-events:none}
-#nosotros .nz2-logo{position:relative;z-index:1;display:block;width:min(100%,220px);height:auto;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #0a1012,0 0 0 7px #e8553d}
+#nosotros .nz2-logo{position:relative;z-index:1;display:block;width:min(100%,220px);height:auto;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #0a1012,0 0 0 7px #f5160f}
 #nosotros .nz2-num{position:relative;z-index:1;display:flex;align-items:flex-end;gap:16px;margin:0}
-#nosotros .nz2-num b{font:800 clamp(84px,10vw,132px)/.8 var(--h);letter-spacing:-.05em;color:#e8553d}
+#nosotros .nz2-num b{font:800 clamp(84px,10vw,132px)/.8 var(--h);letter-spacing:-.05em;color:#f5160f}
 #nosotros .nz2-num span{display:block;padding-bottom:6px;font:700 15px/1.25 var(--b);letter-spacing:.14em;text-transform:uppercase;color:#fff}
 #nosotros .nz2-num small{display:block;margin-top:6px;font:500 12px/1.3 var(--b);letter-spacing:.04em;text-transform:none;color:#9aa3a6}
 #nosotros .nz2-body h2{margin:0 0 16px}
@@ -112,10 +112,10 @@ footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radi
 #nosotros .nz2-stats div{display:flex;flex-direction:column}
 #nosotros .nz2-cta{display:flex;flex-wrap:wrap;gap:10px}
 #nosotros .nz2-cta .btn{flex:0 1 auto;border-color:#0a1012;color:#0a1012;opacity:1}
-#nosotros .nz2-cta .btn.p{background:#e8553d;color:#0a1012}
+#nosotros .nz2-cta .btn.p{background:#f5160f;color:#0a1012}
 #nosotros .nz2-cta .btn:not(.p):hover{background:#0a1012;color:#fff}
 #nosotros .nz2-src{margin-top:clamp(22px,3vw,34px);font-size:13px;color:#535657}
-#nosotros .nz2-src summary{cursor:pointer;display:inline-block;font:700 12px/1.4 var(--b);letter-spacing:.1em;text-transform:uppercase;color:#0a1012;border-bottom:2px solid #e8553d}
+#nosotros .nz2-src summary{cursor:pointer;display:inline-block;font:700 12px/1.4 var(--b);letter-spacing:.1em;text-transform:uppercase;color:#0a1012;border-bottom:2px solid #f5160f}
 #nosotros .nz2-src p{margin:10px 0 0;max-width:60em;font-size:13px}
 #nosotros .nz2-src a{color:#0a1012}
 @media(max-width:900px){
@@ -134,7 +134,7 @@ footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radi
    ===================================================================== */
 #pagos.pay{padding:0;background:#161819;border-block:1px solid #2d3031}
 #pagos .pay-in{display:flex;flex-wrap:wrap;align-items:center;gap:14px clamp(18px,3vw,40px);padding-block:22px 10px}
-#pagos .pay-k{margin:0;padding-right:clamp(14px,2vw,28px);border-right:2px solid #e8553d;font:800 12px/1.2 var(--b);letter-spacing:.22em;text-transform:uppercase;color:#e8553d}
+#pagos .pay-k{margin:0;padding-right:clamp(14px,2vw,28px);border-right:2px solid #f5160f;font:800 12px/1.2 var(--b);letter-spacing:.22em;text-transform:uppercase;color:#f5160f}
 #pagos .pay-l{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0;padding:0;list-style:none;flex:1}
 #pagos .pay-l li{display:flex;flex-direction:column;gap:2px;color:#fff}
 #pagos .pay-l b{font:800 clamp(17px,1.7vw,21px)/1.1 var(--h);letter-spacing:.01em;text-transform:uppercase}
@@ -147,26 +147,26 @@ footer .ft-logo{display:block;width:92px;height:92px;margin:0 0 16px;border-radi
    ===================================================================== */
 #llegar{padding-block:clamp(56px,7vw,104px)}
 #llegar .lg2{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(18px,2.4vw,32px);margin-top:10px}
-#llegar .lg2-main{position:relative;display:flex;flex-direction:column;gap:14px;padding:clamp(24px,3vw,40px);background:#0a1012;color:#fff;border-top:5px solid #e8553d;overflow:hidden}
+#llegar .lg2-main{position:relative;display:flex;flex-direction:column;gap:14px;padding:clamp(24px,3vw,40px);background:#0a1012;color:#fff;border-top:5px solid #f5160f;overflow:hidden}
 #llegar .lg2-main::after{content:"";position:absolute;right:-12%;bottom:-10%;width:78%;aspect-ratio:13/10;background:url(../images/logo-la-mono.svg) center/contain no-repeat;opacity:.05;pointer-events:none}
 #llegar .lg2-main>*{position:relative;z-index:1}
-#llegar .lg2-logo{position:absolute!important;top:clamp(20px,2.6vw,32px);right:clamp(20px,2.6vw,32px);width:76px;height:76px;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #0a1012,0 0 0 5px #e8553d}
-#llegar .lg2-k{margin:0;font:800 12px/1.2 var(--b);letter-spacing:.22em;text-transform:uppercase;color:#e8553d}
+#llegar .lg2-logo{position:absolute!important;top:clamp(20px,2.6vw,32px);right:clamp(20px,2.6vw,32px);width:76px;height:76px;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #0a1012,0 0 0 5px #f5160f}
+#llegar .lg2-k{margin:0;font:800 12px/1.2 var(--b);letter-spacing:.22em;text-transform:uppercase;color:#f5160f}
 #llegar .lg2-a{margin:0;padding-right:92px;font:800 clamp(30px,3.6vw,48px)/1 var(--h);letter-spacing:-.02em;text-transform:uppercase;color:#fff}
 #llegar .lg2-a small{display:block;margin-top:10px;font:600 15px/1.3 var(--b);letter-spacing:.06em;text-transform:none;color:#c5c6c6}
-#llegar .lg2-live{display:flex;align-items:center;gap:12px;margin:6px 0 4px;padding:12px 14px;border-left:3px solid #e8553d;background:rgba(255,255,255,.05)}
+#llegar .lg2-live{display:flex;align-items:center;gap:12px;margin:6px 0 4px;padding:12px 14px;border-left:3px solid #f5160f;background:rgba(255,255,255,.05)}
 #llegar .lg2-live p{margin:0}
 #llegar .lg2-live-t{font:800 13px/1.2 var(--b);letter-spacing:.1em;text-transform:uppercase;color:#fff}
 #llegar .lg2-live-c{margin-top:2px;font:500 13px/1.3 var(--b);color:#c5c6c6}
 #llegar .lg2-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto;padding-top:10px}
 #llegar .lg2-btns .btn{width:100%;border-color:#fff;color:#fff;font-size:13px}
-#llegar .lg2-btns .btn.p{grid-column:1/-1;background:#e8553d;border-color:#e8553d;color:#0a1012}
+#llegar .lg2-btns .btn.p{grid-column:1/-1;background:#f5160f;border-color:#f5160f;color:#0a1012}
 #llegar .lg2-btns .btn:not(.p):hover{background:#fff;color:#0a1012}
-#llegar .lg2-st{min-height:1.2em;margin:0;font:600 13px/1.3 var(--b);color:#ff7a5c}
+#llegar .lg2-st{min-height:1.2em;margin:0;font:600 13px/1.3 var(--b);color:#ff4a3d}
 #llegar .lg2-side{display:grid;gap:14px;align-content:start}
-#llegar .lg2-c{position:relative;display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:20px 22px;background:#fff;border:1px solid #d0d0d0;border-left:5px solid #e8553d}
+#llegar .lg2-c{position:relative;display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:20px 22px;background:#fff;border:1px solid #d0d0d0;border-left:5px solid #f5160f}
 #llegar .lg2-i{grid-row:1/span 3;display:grid;place-items:center;width:44px;height:44px;background:#0a1012}
-#llegar .lg2-i svg{width:24px;height:24px;fill:none;stroke:#e8553d;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#llegar .lg2-i svg{width:24px;height:24px;fill:none;stroke:#f5160f;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 #llegar .lg2-c h3{margin:0 0 4px;font:800 18px/1.1 var(--h);letter-spacing:.02em;text-transform:uppercase;color:#0a1012}
 #llegar .lg2-c p{margin:0;font-size:15px;line-height:1.5;color:#343738}
 #llegar .lg2-bus{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}
