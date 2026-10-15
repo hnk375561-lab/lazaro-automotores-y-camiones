@@ -103,8 +103,8 @@
       mapa.on('click', function () { mapa.scrollWheelZoom.enable(); });
       view.addEventListener('mouseleave', function () { mapa.scrollWheelZoom.disable(); });
     }
-    setTimeout(function () { mapa.invalidateSize(); }, 60);
-    setTimeout(function () { mapa.invalidateSize(); }, 450);
+    setTimeout(function () { if (mapa) mapa.invalidateSize(); }, 60);
+    setTimeout(function () { if (mapa) mapa.invalidateSize(); }, 450);
     var rz = 0; window.addEventListener('resize', function () { if (rz) return; rz = requestAnimationFrame(function () { rz = 0; if (mapa) mapa.invalidateSize(); }); });
   }
 

@@ -111,3 +111,11 @@ body:not(:has(footer))::after{content:"";display:block;height:8px;
 /* Texto chico sobre fondos rojos: tinta pura y más peso */
 .hz-chn--p .hz-chn-s,.hz-chn--p .hz-chn-k{color:#0a1012;opacity:1;font-weight:600}
 .hz-chn--p .hz-chn-s{font-size:13px}
+
+/* Objetivos táctiles de al menos 44 px en celular y tablet */
+@media (max-width:1024px),(pointer:coarse){
+  a.btn.sm,button.btn.sm,.cv-chip,.cv-q,.cv-btn--g,.car-q a,.car-q button,.qa-tabs button{min-height:44px!important}
+  .cv-q,.cv-chip{display:inline-flex;align-items:center;justify-content:center}
+  .car-q a,.car-q button{display:inline-flex;align-items:center;justify-content:center}
+  #unidades .cars .car .car-f .btn{min-height:44px!important}
+}
