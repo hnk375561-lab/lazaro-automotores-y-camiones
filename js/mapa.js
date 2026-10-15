@@ -75,12 +75,12 @@
 
     var icono = L.divIcon({
       className: 'hz-pin',
-      html: '<span class="hz-pin-r" aria-hidden="true"></span><span class="hz-pin-b"><img src="images/logo-lazaro-badge.svg" width="56" height="56" alt="" decoding="async"></span>',
-      iconSize: [56, 56], iconAnchor: [28, 68], popupAnchor: [0, -64]
+      html: '<span class="hz-pin-r" aria-hidden="true"></span><span class="hz-pin-b"><img src="images/logo-lazaro-badge.svg" width="62" height="62" alt="" decoding="async"></span>',
+      iconSize: [62, 62], iconAnchor: [31, 84], popupAnchor: [0, -86]
     });
     var marca = L.marker([lat, lng], { icon: icono, title: nombre, keyboard: true, alt: nombre }).addTo(mapa);
     marca.bindPopup(popup(), { closeButton: false, minWidth: 210, maxWidth: 260, offset: [0, 0] });
-    marca.bindTooltip(nombre, { permanent: true, direction: 'right', offset: [32, -34], className: 'hz-tt' });
+    marca.bindTooltip(nombre, { permanent: true, direction: 'bottom', offset: [0, 4], className: 'hz-tt' });
 
     /* botón «Centrar» */
     var Centrar = L.Control.extend({
