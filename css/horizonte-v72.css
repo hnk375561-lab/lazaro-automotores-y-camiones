@@ -19,8 +19,8 @@ html body .hz-v71 .hz-addr .btn{flex:1 1 auto}
 .hero-media{animation:hzMediaIn 1.2s ease-out both}
 .hero-slide{position:absolute;inset:0;z-index:0;margin:0;width:100%;height:100%;overflow:hidden;opacity:0;visibility:hidden;transition:none;contain:paint}
 .hero-slide.is-leaving{z-index:1;opacity:1;visibility:visible}
-.hero-slide.is-active{z-index:2;opacity:1;visibility:visible;transition:opacity .7s ease,visibility 0s}
-.hero-slide img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:none!important;image-rendering:auto;transform:scale(1);transform-origin:50% 50%;transition:none!important;backface-visibility:hidden;will-change:transform}
+.hero-slide.is-active{z-index:2;opacity:1;visibility:visible;transition:opacity .5s ease,visibility 0s}
+.hero-slide img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:none!important;image-rendering:auto;transform:scale(1);transform-origin:50% 50%;transition:none!important;backface-visibility:hidden}
 .hero-slide.is-active img,.hero-slide.is-leaving img{animation:hzKen 3s cubic-bezier(.3,.1,.4,1) both}
 @media(max-width:900px){.hero::before{background:linear-gradient(180deg,rgba(10,16,18,.5) 0%,rgba(10,16,18,.66) 45%,rgba(10,16,18,.78) 100%)!important}}
 @media(prefers-reduced-motion:reduce){.hero-media{animation:none}.hero-slide.is-active{transition:none}.hero-slide.is-active img,.hero-slide.is-leaving img{animation:none}}
@@ -108,3 +108,15 @@ html body .hz-v71 .hz-addr .btn{flex:1 1 auto}
 #visita::after{background-image:linear-gradient(180deg,#0a1012 0,rgba(10,16,18,.46) 14%,rgba(10,16,18,.5) 86%,#0a1012 100%),linear-gradient(90deg,rgba(10,16,18,.68),rgba(10,16,18,.3) 60%,rgba(10,16,18,.45)),url(../images/fondos/visita.webp);background-position:center,center,50% 55%}
 #contacto::after{background-image:linear-gradient(180deg,#0a1012 0,rgba(10,16,18,.52) 14%,rgba(10,16,18,.58) 86%,#0a1012 100%),linear-gradient(90deg,rgba(10,16,18,.66),rgba(10,16,18,.34) 70%,rgba(10,16,18,.5)),url(../images/fondos/contacto.webp);background-position:center,center,50% 45%}
 footer::after{background-image:linear-gradient(180deg,rgba(10,16,18,.86),rgba(10,16,18,.8)),url(../images/fondos/footer.webp);background-position:center,50% 60%}
+
+/* 6 · Logo grande del hero: flotación suave, halo que respira y destello sobre las letras rojas */
+@keyframes hzFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes hzGlow{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}
+@keyframes hzGlint{0%,62%{background-position:160% 0}100%{background-position:-60% 0}}
+.hero .hx-badge{animation:lzBadgeIn .9s cubic-bezier(.2,.7,.2,1) .15s both,hzFloat 6s ease-in-out 1.2s infinite}
+.hero .hx-badge::before{content:"";position:absolute;inset:-24%;z-index:-1;border-radius:50%;background:radial-gradient(circle,rgba(232,85,61,.65) 0,rgba(232,85,61,.3) 40%,transparent 66%);animation:hzGlow 4.5s ease-in-out infinite;pointer-events:none}
+.hero .hx-badge::after{content:"";position:absolute;inset:0;z-index:2;border-radius:50%;pointer-events:none;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.75) 50%,transparent 60%) 160% 0/250% 100% no-repeat;mix-blend-mode:soft-light;animation:hzGlint 6s ease-in-out 1.6s infinite}
+.hero .hx-badge img{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;transform:perspective(900px) rotateX(var(--lz-rx,0deg)) rotateY(var(--lz-ry,0deg))}
+.hero .hx-badge-ring{border-color:rgba(232,85,61,.65)}
+@media(max-width:900px){.hero .hx-badge{animation:none}.hero .hx-badge::before{inset:-18%}.hero .hx-badge img{transform:none}}
+@media(prefers-reduced-motion:reduce){.hero .hx-badge{animation:none}.hero .hx-badge::before,.hero .hx-badge::after{animation:none}.hero .hx-badge img{transform:none}}
